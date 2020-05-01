@@ -1,0 +1,29 @@
+// Colors
+$color-primary: #8490ff;
+$color-secondary: #62bdfc;
+$color-txt: #777777;
+$color-title: #222222;
+$color-link: #8490ff;
+$color-bg-header: #fdfdff;
+$color-bg-primary: #fff;
+$color-bg-secondary: #f6f6fc;
+$color-footer-bg: #04091e;
+$color-footer-title: #fcfcff;
+
+// Grid
+$grid-columns: 12;
+
+$responsive-table: (
+    -xs: 360px,
+    -md: 720px,
+    -lg: 960px
+);
+
+// About.html -- Les compétences
+$tools-table: (
+    after-effects: 85%,
+    photoshop: 90%,
+    illustrator: 70%,
+    sublime: 95%,
+    sketch: 85%
+);

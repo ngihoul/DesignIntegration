@@ -1,0 +1,124 @@
+.l-header {
+    background: $color-bg-primary;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+    box-shadow: 0px 2px 8px 0px rgba(#eeeeee,0.3);
+}
+
+.l-header-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.l-header-logo {
+    @include custom-grid(6);
+
+    a {
+        display: block;
+        padding: 1rem 1.5rem;
+    }
+
+    img {
+        width: 133px;
+    }
+}
+
+/* Animated hamburger menu */
+.l-header-hamburger {
+    @include custom-grid(6);
+    position: relative;
+    height: 3rem; // Navigateurs n'affichent pas la div en block si pas de hauteur > Zone de click très restreinte sans.
+    cursor: pointer; // Pas nécessaire pour le mobile.
+
+    .burger {
+        position: absolute;
+        top: calc(50% - 1.5px); // 50% - la moitié de la taille de l'élement (cf. height).
+        right: 1.5rem;
+    
+        width: 24px;
+        height: 3px;
+    
+        background-color: $color-title;
+
+        transition: all 0.5s;
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+
+            width: 24px;
+            height: 3px;
+
+            background-color: $color-title;
+        }
+
+        &::before {
+            top: -8px;
+            transition: all 0.5s;
+        }
+
+        &::after {
+            bottom: -8px;
+            transition: all 0.5s;
+        }
+    }
+
+    /* From hamburger menu to closure cross */
+    &.nav-active > .burger {
+            background-color: $color-bg-primary;
+            transition: background-color 0.5s;
+    }
+
+    &.nav-active > .burger::before {
+            transform: rotate(45deg);
+            top: 0;
+            transition: all 0.5s;
+    }
+
+    &.nav-active > .burger::after {
+            transform: rotate(-45deg);
+            bottom: 0;
+            transition: all 0.5s;
+    }
+}
+
+/* Hidden nav */
+.l-header-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 75vw;
+    height: 100vh;
+    background: rgba(#000, 0.94);
+
+    transition: left 0.5s linear;
+
+    ul {
+        padding: 1.5rem 1rem;
+    }
+
+    a {
+        display: block;
+        padding: 1rem;
+        text-transform: uppercase;
+
+        color: $color-bg-primary;
+
+        font-size: 1.2rem;
+    }
+
+    .link-active {
+        color: $color-link;
+    }
+
+    /* Active nav */
+    &.is-active {
+        left: 0;
+        transition: width 0.5s;
+
+        transition: left 0.5s linear;
+    }
+}

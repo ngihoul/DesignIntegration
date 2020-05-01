@@ -1,0 +1,15 @@
+// Grid
+@mixin custom-grid($i) {
+    flex : 0 0 ((100%/$grid-columns)*$i);
+    max-width: ((100%/$grid-columns)*$i);
+}
+
+@mixin col-alone {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+@mixin bg-gradient {
+    background: linear-gradient(90deg, $color-primary 40%, $color-secondary 100%);
+}

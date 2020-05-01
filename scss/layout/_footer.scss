@@ -1,0 +1,70 @@
+.l-footer {
+    background-color: $color-footer-bg;
+}
+
+.l-footer-wrap {
+    h3 {
+        color: $color-footer-title;
+        padding-top: 2rem;
+    }
+
+    p {
+        padding-top: 1.2rem;
+    }
+
+    /* Email field for newsletter */
+    form {
+        display: flex; // pour coller les inputs.
+        align-items: center;
+
+        label {
+            display: none;
+        }
+
+        input[type=email], input[type=submit] {
+            height: 3rem;
+            border: none;
+            padding: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        input[type=email] {
+            @include custom-grid(10);
+        }
+
+        input[type=submit] {
+            @include custom-grid(2);
+            background-color: $color-primary;
+
+            &:hover, &:active {
+                background-color: $color-secondary;
+            }
+        }
+    }
+}
+
+.l-footer-about {
+    a[href="http://www.colorlib.com"] {
+        color: $color-link;
+      
+      &:hover{
+          color: $color-txt;
+        }
+    }
+}
+
+.l-footer-social-logos {
+    a {
+        color: $color-footer-title;
+        padding: 1.5rem 1rem;
+
+        &:hover {
+            color: $color-link;
+        }
+    }
+
+    i {
+        padding-top: 1.5rem; // Le padding-top sur la balise <a> ne fonctionne pas.
+        font-size: 1.5rem;
+    }
+}

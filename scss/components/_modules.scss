@@ -1,0 +1,111 @@
+/* Page heading */
+.m-page-heading {
+    @include bg-gradient;
+    color: #fff;
+    text-align: center;
+
+    h1 {
+        font-size: 3rem;
+        color: inherit;
+        text-transform: capitalize;
+    }
+
+    a {
+        &:first-child::after {
+            content: '→';
+            padding: 0 1rem;
+        }
+    }
+}
+
+
+/* Section & Aside heading */
+.m-section-heading, .m-aside-heading {
+    text-align: center;
+    padding-bottom: 1.5rem;
+
+    h3 {
+        font-size: 2.5rem;
+        text-transform: capitalize;
+        padding-bottom: 1.5rem;
+    }
+}
+
+/* About me -- Home.html & About.html */
+.m-about-wrap {
+    padding-top: 8rem;
+
+    .row {
+        align-items: center;
+    }
+
+    img {
+        padding-bottom: 5rem;
+    }
+}
+
+.m-about-description {
+    p:first-child {
+        padding-top: 2.5rem;
+    }
+}
+
+.m-about-tools {
+    h3 {
+        padding-bottom: 2.5rem;
+    }
+}
+
+.m-about-tool-details {
+    padding-bottom: 2.5rem;
+    p {
+        padding: 0;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .m-about-wrap {
+        padding-top: 5rem;
+
+        .row {
+            align-items: flex-end;
+        }
+    
+        img {
+            padding: 0;
+        }
+    }
+}
+
+/* Premium Quality -- Home.html & About.html */
+.m-quality {
+    @include bg-gradient;
+    padding-bottom: 3rem;
+}
+
+.m-quality-wrap {
+    img {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    a {
+        display: none;
+
+        &:first-child {
+            display: block;
+        }
+    }
+}
+
+/* Projects thumbnails */
+.m-projects-presentation {
+    padding-top: 1.5rem;
+    text-align: center;
+
+    h4 {
+        padding-top: 0.5rem;
+    }
+}

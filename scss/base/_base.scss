@@ -1,0 +1,59 @@
+/* Generic tags */
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: $color-txt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-title;
+}
+
+h1, h2, h5 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    padding: 1.5rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 0.9rem;
+    color: $color-txt;
+    letter-spacing: 0.2rem;
+}
+
+p {
+    padding-bottom: 1.5rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}

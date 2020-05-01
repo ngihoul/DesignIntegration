@@ -1,0 +1,13 @@
+{
+  "name": "personal",
+  "version": "1.0.0",
+  "description": "Examen création de sites statiques 2020",
+  "main": "index.js",
+  "scripts": {
+    "node-sass": "node-sass scss/screen.scss css/screen.css -w",
+    "prefix": "postcss css/screen.css --use autoprefixer -d css/"
+  },
+  "author": "Nicolas Gihoul",
+  "license": "ISC",
+  "browserslist": ["> 1%", "last 2 versions", "ie >= 9"]
+}

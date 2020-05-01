@@ -1,0 +1,45 @@
+.btn-primary {
+    display: block;
+    width: 200px;
+    text-align: center;
+    padding: 0.8rem 0;
+    background: $color-primary;
+    @include bg-gradient;
+    color: $color-bg-primary;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.10rem;
+
+    &:hover {
+        background: $color-secondary;
+    }
+}
+
+// Boucle dans le tableau des compétences pour adapter automatiquement les jauges sur la page about.html
+@each $tool, $skill-pc in $tools-table {
+    .gauge-tool.#{$tool} {
+        display: block;
+        position: relative;
+        
+        height: 14px;
+        width: 100%;
+
+        background-color: #dddddd;
+        border: 4px solid #eeeeee;
+        border-radius: 50px;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            height: 6px;
+            width: #{$skill-pc};
+
+            @include bg-gradient;
+            border-radius: 50px;
+        }
+    }
+}

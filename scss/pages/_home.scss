@@ -1,0 +1,127 @@
+/* Background sections */
+.home-slider, .home-services, .home-blog {
+    background-color: $color-bg-secondary;
+}
+
+.home-about, .home-projects {
+    background: $color-bg-primary;;
+}
+
+.home-counters {
+    @include bg-gradient;
+}
+
+/* Home slider */
+.home-slider-wrap {
+    padding-bottom: 0;
+
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        padding-top: 5rem;
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .home-slider-wrap {
+        padding-top: 5rem;
+
+        img {
+            padding-top: 0;
+        }
+    }
+
+    .home-slider-this-is-me {
+        padding-top: 5rem;
+    }
+}
+
+/* Home My Offered Services */
+.home-service-details {
+    text-align: center;
+    padding: 1rem 0 2.5rem;
+
+    i {
+        font-size: 2.5rem;
+        color: $color-title;
+        padding-bottom: 1.5rem;
+    }
+
+    h4 {
+        padding-bottom: 1rem;
+    }
+
+    a {
+        color: $color-title;
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .home-service-details {
+        // padding: 2rem;
+    }
+}
+
+/* Home Counters */
+.home-counters-wrap {
+    padding: 5rem 0;
+    text-align: center;
+
+    .home-counter-item {
+        padding: 2rem 0;
+
+        h3, p {
+        color: $color-bg-primary;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        p {
+            padding: 0;
+        }
+    }
+}
+
+/* Home Latest projects */
+
+
+/* Home latest blogs posts */
+.home-blog-post {
+    padding: 1.5rem 0;
+
+    h4 {
+        padding: 1.3rem 0 1rem;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+    }
+}
+
+.home-blog-post-details {
+    display: flex;
+    align-items: center;
+
+    padding: 0.5rem 0;
+
+    border-bottom: 1px solid lighten($color-txt, 40%);
+
+    .blog-post-date {
+        margin-left: auto;
+    }
+
+    img {
+        width: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    p {
+        padding: 0;
+    }
+
+    i {
+        margin-left: 0.5rem;
+    }    
+}

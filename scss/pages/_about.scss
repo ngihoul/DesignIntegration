@@ -1,0 +1,32 @@
+.about-feedback {
+    background-color: $color-bg-secondary;
+    padding-bottom: 5rem;
+}
+
+.about-feedback-quote-item {
+    padding: 2.5rem 0;
+    background-color: $color-bg-primary;
+    display: none;
+
+    img {
+        float: left;
+        width: 3rem;
+        padding-left: 1rem;
+        margin-top: -0.4rem;
+    }
+
+    p {
+        padding-left: 4rem;
+    }
+
+    .about-feedback-name {
+        font-size: 1.3rem;
+        color: $color-title;
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+    }
+
+    &:first-child {
+        display: block;
+    }
+}
