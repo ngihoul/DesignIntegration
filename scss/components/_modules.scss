@@ -3,6 +3,7 @@
     @include bg-gradient;
     color: #fff;
     text-align: center;
+    text-transform: capitalize;
 
     h1 {
         font-size: 3rem;
@@ -41,26 +42,6 @@
 
     img {
         padding-bottom: 5rem;
-    }
-}
-
-.m-about-description {
-    p:first-child {
-        padding-top: 2.5rem;
-    }
-}
-
-.m-about-tools {
-    h3 {
-        padding-bottom: 2.5rem;
-    }
-}
-
-.m-about-tool-details {
-    padding-bottom: 2.5rem;
-    p {
-        padding: 0;
-        text-align: right;
     }
 }
 

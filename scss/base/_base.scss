@@ -57,3 +57,15 @@ img {
     height: auto;
     vertical-align: bottom;
 }
+
+form {
+    input, textarea {
+        padding: 1.5rem;
+        background-color: $color-bg-primary;
+        border: 1px solid lighten($color-txt, 30%);
+        margin: 0.75rem 0;
+        width: 100%;
+        font: inherit;
+        color: lighten($color-txt, 10%);
+    }
+}

@@ -60,6 +60,15 @@ img {
   height: auto;
   vertical-align: bottom; }
 
+form input, form textarea {
+  padding: 1.5rem;
+  background-color: #fff;
+  border: 1px solid #c4c4c4;
+  margin: 0.75rem 0;
+  width: 100%;
+  font: inherit;
+  color: #919191; }
+
 /* FlexBox Grid */
 .row {
   display: flex;
@@ -212,7 +221,8 @@ img {
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 0.10rem; }
+  letter-spacing: 0.10rem;
+  border: none; }
   .btn-primary:hover {
     background: #62bdfc; }
 
@@ -315,7 +325,8 @@ img {
 .m-page-heading {
   background: linear-gradient(90deg, #8490ff 40%, #62bdfc 100%);
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  text-transform: capitalize; }
   .m-page-heading h1 {
     font-size: 3rem;
     color: inherit;
@@ -340,18 +351,6 @@ img {
     align-items: center; }
   .m-about-wrap img {
     padding-bottom: 5rem; }
-
-.m-about-description p:first-child {
-  padding-top: 2.5rem; }
-
-.m-about-tools h3 {
-  padding-bottom: 2.5rem; }
-
-.m-about-tool-details {
-  padding-bottom: 2.5rem; }
-  .m-about-tool-details p {
-    padding: 0;
-    text-align: right; }
 
 @media screen and (min-width: 720px) {
   .m-about-wrap {
@@ -607,6 +606,18 @@ img {
   .home-blog-post-details i {
     margin-left: 0.5rem; }
 
+.about-description p:first-child {
+  padding-top: 2.5rem; }
+
+.about-tools h3 {
+  padding: 1rem 0 1.5rem; }
+
+.about-tool-details {
+  padding-bottom: 2.5rem; }
+  .about-tool-details p {
+    padding: 0;
+    text-align: right; }
+
 .about-feedback {
   background-color: #f6f6fc;
   padding-bottom: 5rem; }
@@ -621,7 +632,8 @@ img {
     padding-left: 1rem;
     margin-top: -0.4rem; }
   .about-feedback-quote-item p {
-    padding-left: 4rem; }
+    padding-left: 4rem;
+    padding-right: 0.5rem; }
   .about-feedback-quote-item .about-feedback-name {
     font-size: 1.3rem;
     color: #222222;
@@ -629,3 +641,38 @@ img {
     padding-bottom: 0.5rem; }
   .about-feedback-quote-item:first-child {
     display: block; }
+
+.contact-wrap {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #f6f6fc; }
+
+.contact-googlemap iframe {
+  width: 100%; }
+
+.contact-details {
+  padding: 2.5rem 1rem; }
+
+.contact-details-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0; }
+  .contact-details-item i {
+    font-size: 2rem;
+    padding: 0 1.5rem; }
+  .contact-details-item p {
+    padding: 0.25rem 0; }
+  .contact-details-item address {
+    font-style: normal; }
+  .contact-details-item a {
+    color: #222222;
+    font-size: 1.1rem; }
+
+.contact-form {
+  padding: 0 1rem; }
+  .contact-form label {
+    display: none; }
+
+.contact-form-field {
+  display: flex;
+  justify-content: flex-end; }

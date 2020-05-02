@@ -1,0 +1,54 @@
+.contact-wrap {
+    padding-left: 0;
+    padding-right: 0;
+
+    background-color: $color-bg-secondary;
+}
+
+.contact-googlemap {
+    iframe {
+        width: 100%;
+    }
+}
+
+.contact-details {
+    padding: 2.5rem 1rem;
+}
+
+.contact-details-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+
+    i {
+        font-size: 2rem;
+        padding: 0 1.5rem;
+    }
+
+    p {
+        padding: 0.25rem 0;
+    }
+
+    address {
+        font-style: normal;
+    }
+
+    a {
+        color: $color-title;
+        font-size: 1.1rem;
+    }
+}
+
+.contact-form {
+    padding: 0 1rem;
+
+    label {
+        display: none;
+    }
+}
+
+.contact-form-field {
+    display: flex;
+    justify-content: flex-end;
+
+}

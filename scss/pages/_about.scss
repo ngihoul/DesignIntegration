@@ -1,3 +1,23 @@
+.about-description {
+    p:first-child {
+        padding-top: 2.5rem;
+    }
+}
+
+.about-tools {
+    h3 {
+        padding: 1rem 0 1.5rem;
+    }
+}
+
+.about-tool-details {
+    padding-bottom: 2.5rem;
+    p {
+        padding: 0;
+        text-align: right;
+    }
+}
+
 .about-feedback {
     background-color: $color-bg-secondary;
     padding-bottom: 5rem;
@@ -17,6 +37,7 @@
 
     p {
         padding-left: 4rem;
+        padding-right: 0.5rem;
     }
 
     .about-feedback-name {
