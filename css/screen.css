@@ -652,6 +652,9 @@ form input, form textarea {
   .about-feedback-quote-item:first-child {
     display: block; }
 
+.blog-heading {
+  background: url("../img/blog/blog-home-banner.jpg") center top; }
+
 .contact-wrap {
   padding-left: 0;
   padding-right: 0;
