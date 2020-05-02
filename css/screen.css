@@ -321,6 +321,16 @@ form input, form textarea {
     background: linear-gradient(90deg, #8490ff 40%, #62bdfc 100%);
     border-radius: 50px; }
 
+/* Aside heading -- Blog.html & Article.html */
+.aside-heading {
+  background-color: #8490ff;
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: normal; }
+
 /* Page heading */
 .m-page-heading {
   background: linear-gradient(90deg, #8490ff 40%, #62bdfc 100%);
