@@ -27,7 +27,9 @@
     .blog-heading-wrap {
         z-index: 9999;
         position: absolute;
-        top: calc(50vh - 200px);
+        width: 100%;
+        top: calc(50vh - 150px);
+        left: calc(50vw - 50%);
     }
 
     h1 {
@@ -38,6 +40,16 @@
 
     p {
         color: $color-aside-subtitle;
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .blog-heading {
+        height: 50vh;
+
+        .blog-heading-wrap {
+            top: 15%;
+        }
     }
 }
 
@@ -56,9 +68,9 @@
         &::before {
             content: '';
             position: absolute;
-            left: calc(50% - 125px);
+            left: 15%;
             bottom: 10%;
-            width: 250px;
+            width: 70%;
             height: 1px;
             background-color: $color-aside-title;
         }
@@ -101,6 +113,16 @@
     z-index: 1;
 }
 
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .blog-cat-item {
+        margin: 0 0.5rem;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
 /* Blog articles list */
 .blog-articles-list h2 {
     display: none;
@@ -130,6 +152,20 @@
 @each $item, $font-awesome-ref in $blog-icons {
     .blog-article-#{$item}::after {
         @include custom-icon(quote(#{$font-awesome-ref}));
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .blog-article-categories {
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        text-align: right;
+        
+    }
+
+     .blog-article-author, .blog-article-date, .blog-article-views, .blog-article-comments {
+        text-align: right;
+        padding-right: 0.4rem;
     }
 }
 

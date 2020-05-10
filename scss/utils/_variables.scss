@@ -4,9 +4,9 @@ $color-secondary: #62bdfc;
 $color-txt: #777777;
 $color-title: #222222;
 $color-link: #8490ff;
-$color-bg-header: #fdfdff;
+$color-bg-header: #fff;
 $color-bg-primary: #fff;
-$color-bg-secondary: #fafafc;
+$color-bg-secondary: #faf9ff;
 $color-aside-title: #fdfdff;
 $color-aside-subtitle: #fafafc;
 $color-footer-bg: #04091e;
@@ -17,9 +17,9 @@ $color-footer-title: #fcfcff;
 $grid-columns: 12;
 
 $responsive-table: (
-    -xs: 360px,
-    -md: 720px,
-    -lg: 960px
+    -xs: 360px, 
+    -md: 960px,
+    -lg: 1024px
 );
 
 // About.html -- Les compétences

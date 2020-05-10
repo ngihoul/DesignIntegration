@@ -1,5 +1,5 @@
 /* Generic tags */
-
+@charset 'UTF-8';
 @font-face {
     font-family: "Poppins";
     src: url("../fonts/poppins/Poppins-Regular.ttf") format("truetype");
@@ -48,8 +48,12 @@ h5 {
     letter-spacing: 0.2rem;
 }
 
-p {
+p, q {
     padding-bottom: 1.5rem;
+}
+
+q {
+    font: inherit;
 }
 
 img {
@@ -67,5 +71,11 @@ form {
         width: 100%;
         font: inherit;
         color: lighten($color-txt, 10%);
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    p, q {
+        font-size: 0.9rem;
     }
 }

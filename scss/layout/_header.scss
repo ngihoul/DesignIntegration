@@ -134,6 +134,7 @@
     }
 }
 
+/* grey body animation */
 @keyframes opacityOnBody {
     0% {
         opacity: 0;
@@ -145,5 +146,38 @@
 
     100% {
         opacity: 0.45;
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .l-header-logo{
+        @include custom-grid(3);
+    }
+
+    .l-header-hamburger {
+        display: none;
+    }
+
+    .l-header-nav {
+        @include custom-grid(9);
+        position: static;
+        height: auto;
+        background: inherit;
+
+        ul {
+            padding: 0 1.5rem 0 0;
+            text-align: right;
+
+            li {
+                display: inline-block;
+
+                a {
+                    display: block;
+                    padding: 1rem 1.2rem;
+                    color: $color-title;
+                    font-size: 0.9rem;
+                }
+            }
+        }
     }
 }

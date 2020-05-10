@@ -64,6 +64,7 @@
 
     h4 {
         padding-bottom: 1rem;
+        text-transform: capitalize;
     }
 
     a {
@@ -72,8 +73,15 @@
 }
 
 @media screen and (min-width: map-get($responsive-table, -md)) {
-    .home-service-details {
-        // padding: 2rem;
+    .home-services {
+        // Utilisation des class de la grille pour éviter d'utiliser les class "webdesign", "webdev", etc. > Maintenabilité accrue.
+        .col-md-6:nth-child(even) {
+            padding-right: 1.5rem;
+        }
+
+        .col-md-6:nth-child(odd) {
+            padding-left: 1.5rem;
+        }
     }
 }
 
@@ -98,6 +106,12 @@
             font-size: 2.5rem;
             font-weight: bold;
         }
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .home-counters-wrap {
+        padding: 5rem 8rem;;
     }
 }
 
@@ -149,4 +163,57 @@
     i {
         margin-left: 0.5rem;
     }    
+}
+
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .home-blog {
+        // Utilisation des classes de la grille pour améliorer la maintenabilité du code. Si ajout de posts sur la page home, les padding s'adaptent automatiquement peu importe le nombre.
+        .col-md-4 {
+            &:nth-child(3n+2) {
+                padding-right: 1.2rem;
+            }
+
+            &:nth-child(3n+3) {
+                padding-right: 0.6rem;
+                padding-left: 0.6rem;
+            }
+
+            &:nth-child(3n+4){
+                padding-left: 1.2rem;
+            }
+        }
+    }
+
+    .home-blog-post {
+        padding-top: 0;
+    }
+
+    .home-blog-post-details {
+        p {
+            font-size: 0.9rem;
+        }
+    }
+
+    .blog-post-date {
+        text-align: right;
+
+        p {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+// Pour éviter que la date, les likes et les commentaires ne soient renvoyés à la ligne :
+@media screen and (min-width: 800px){
+    .blog-post-date p {
+        font-size: 0.8rem;
+    }
+            
+}
+
+@media screen and (min-width: 850px){
+    .blog-post-date p {
+        font-size: 0.9rem;
+    }
+            
 }

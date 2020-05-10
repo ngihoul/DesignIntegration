@@ -11,6 +11,7 @@
 }
 
 @mixin bg-gradient {
+    background: $color-primary; // Si le dégradé n'est pas pris en compte par le navigateur.
     background: linear-gradient(90deg, $color-primary 40%, $color-secondary 100%);
 }
 

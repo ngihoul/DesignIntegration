@@ -21,8 +21,6 @@
     padding: 0 0.5rem;
 }
 
-
-
 /* Section & Aside heading */
 .m-section-heading, .m-aside-heading {
     text-align: center;
@@ -33,6 +31,23 @@
         text-transform: capitalize;
         padding-bottom: 1.5rem;
     }
+}
+
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .m-section-heading, .m-aside-heading {
+        padding-bottom: 3.5rem;
+
+        p {
+            padding: 0 8rem;
+        }
+
+        h3 {
+            padding-bottom: 0.5rem;
+        }
+
+    }
+    
+    
 }
 
 /* About me -- Home.html & About.html */
@@ -86,6 +101,27 @@
     }
 }
 
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .m-quality-wrap {
+        display: flex;
+        justify-content: space-around;
+        padding: 5rem 2.5rem;
+
+        img {
+            width: 100%;
+            padding: 1.5rem;
+        }
+
+        a {
+            display: inline-block;
+
+            &:first-child {
+                display: inline-block;
+            }
+        }
+    }
+}
+
 /* Projects thumbnails */
 .m-projects-presentation {
     padding-top: 1.5rem;
@@ -96,51 +132,29 @@
     }
 }
 
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .m-projects {
+        // Utilisation des class de la grille pour éviter d'utiliser les class "webdesign", "webdev", etc. > Maintenabilité accrue.
+        .col-md-6:nth-child(even) {
+            padding-right: 1.5rem;
+        }
+
+        .col-md-6:nth-child(odd) {
+            padding-left: 1.5rem;
+        }
+    }
+
+    .m-projects-presentation {
+        padding-top: 0;
+    }
+}
+
 /* Aside -- Blog.html & Article.html */
 /* Blog aside */
 .m-aside-blog-wrap {
     margin: 0 1rem 5rem;
     padding: 3rem 2rem;
     border: 2px solid #f1f0ee;
-}
-
-/* Aside -- Search box */
-.search-box {
-    display: flex;
-    padding-bottom: 3rem;
-
-    label {
-        display: none;
-    }
-
-    input {
-        background-color: $color-primary;
-        border: none;
-        color: #fff;
-        font-size: 1rem;
-        padding: 1rem 1.5rem;
-
-        &[type=text] {
-            border-radius: 50px 0 0 50px;
-            @include custom-grid(9);
-            color: #fff;
-            
-            &::placeholder {
-                color: darken(#fff, 5%);
-            }
-
-            &::-ms-input-placeholder { 
-                color: #fff; 
-            }
-        }
-
-        
-
-        &[type=submit] {
-            border-radius: 0 50px 50px 0;
-            @include custom-grid(3);
-        }
-    }
 }
 
 /* Aside -- Author */
