@@ -3,6 +3,7 @@
 }
 
 .l-footer-wrap {
+    padding: 5rem 1rem 5rem;
     h3 {
         color: $color-footer-title;
         padding-top: 2rem;
@@ -35,6 +36,7 @@
         input[type=submit] {
             @include custom-grid(2);
             background-color: $color-primary;
+            color: $color-bg-primary;
 
             &:hover, &:active {
                 background-color: $color-secondary;

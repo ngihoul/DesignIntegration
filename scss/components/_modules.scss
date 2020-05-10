@@ -10,14 +10,17 @@
         color: inherit;
         text-transform: capitalize;
     }
-
-    a {
-        &:first-child::after {
-            content: '→';
-            padding: 0 1rem;
-        }
-    }
 }
+
+.m-page-heading-wrap {
+ padding-top: 8.5rem;
+}
+
+.next-row::after {
+    @include custom-icon("\f061");
+    padding: 0 0.5rem;
+}
+
 
 
 /* Section & Aside heading */
@@ -62,10 +65,12 @@
 /* Premium Quality -- Home.html & About.html */
 .m-quality {
     @include bg-gradient;
-    padding-bottom: 3rem;
 }
 
 .m-quality-wrap {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+
     img {
         display: block;
         width: 50%;
@@ -89,4 +94,148 @@
     h4 {
         padding-top: 0.5rem;
     }
+}
+
+/* Aside -- Blog.html & Article.html */
+/* Blog aside */
+.m-aside-blog-wrap {
+    margin: 0 1rem 5rem;
+    padding: 3rem 2rem;
+    border: 2px solid #f1f0ee;
+}
+
+/* Aside -- Search box */
+.search-box {
+    display: flex;
+    padding-bottom: 3rem;
+
+    label {
+        display: none;
+    }
+
+    input {
+        background-color: $color-primary;
+        border: none;
+        color: #fff;
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+
+        &[type=text] {
+            border-radius: 50px 0 0 50px;
+            @include custom-grid(9);
+            color: #fff;
+            
+            &::placeholder {
+                color: darken(#fff, 5%);
+            }
+
+            &::-ms-input-placeholder { 
+                color: #fff; 
+            }
+        }
+
+        
+
+        &[type=submit] {
+            border-radius: 0 50px 50px 0;
+            @include custom-grid(3);
+        }
+    }
+}
+
+/* Aside -- Author */
+.m-aside-blog section {
+    border-top: 2px solid #f1f0ee;
+    padding: 3rem 0;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.m-aside-blog-author {
+    text-align: center;
+    padding-bottom: 3rem;
+
+    img {
+        display: block;
+        margin: 0rem auto 3rem;
+        width: 33%;
+    }
+
+    .author-role {
+        padding-bottom: 1.5rem;
+    }
+
+    .author-social a {
+        font-size: 1.2rem;
+        padding: 1.5rem 0.5rem;
+    }
+
+    .author-description {
+        padding: 1.5rem 0 0 0;
+    }
+}
+
+/* Aside - Ads */
+.m-aside-blog-ads h4 {
+    display: none;
+}
+
+/* Aside -- Post categories */
+.m-aside-blog-categories .aside-heading {
+    margin-bottom: 0.5rem;
+}
+
+.m-aside-blog-categorie {
+    a {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px dotted #f1f0ee;
+    }
+
+    p {
+        padding: 1rem 0.4rem 0.5rem;
+    }
+}
+
+/* Aside -- Newsletter */
+.m-aside-blog-newsletter {
+    text-align: center;
+
+    p:last-child{
+        padding-bottom: 0;
+    }
+}
+
+.aside-newsletter-form {
+    display: flex;
+
+    label {
+        display: none;
+    }
+
+    input {
+        padding: 0.8rem;
+        &[type=email]{
+            @include custom-grid(8);
+
+            &::placeholder, &::-ms-input-placeholder { 
+                color: lighten($color-txt, 50%); 
+            }
+        }
+
+        &[type=submit] {
+            @include custom-grid(4);
+            background-color: $color-primary;
+            border-color: $color-primary;
+            color: #fff;
+        }
+
+    }
+}
+
+// Hack placeholder font in Aside-newsletter
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free", "Poppins";
 }

@@ -13,3 +13,14 @@
 @mixin bg-gradient {
     background: linear-gradient(90deg, $color-primary 40%, $color-secondary 100%);
 }
+
+/* Blog icons */
+@mixin custom-icon($ref) {
+    font-family: "Font Awesome 5 Free", "Poppins";
+    font-weight: 300;
+    content: $ref;
+}
+
+@mixin custom-border($type) {
+    border: 2px $type #f1f0ee;
+}

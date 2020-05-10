@@ -42,7 +42,7 @@
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-6">
                             <div class="home-slider-this-is-me">
-                                <h5>This is me</h5>
+                                <p class="subtitle">This is me</p>
                                 <h1>ISL Student</h1>
                                 <p>You will begin to realise why this exercice is called the Dickens Pattern with reference to the ghost showing Scrooge some different futures.</p>
                                 <a href="about.html" class="btn-primary">Discover Now</a>
@@ -62,7 +62,7 @@
                         </div>
                         <div class="col-12 col-md-6 col-lg-6">
                             <div class="m-about-me">
-                                <h5>About me</h5>
+                                <p class="subtitle">About me</p>
                                 <h2>Personal details</h2>
                                 <p>Here I focus on a range of items and features that we use in life without giving them a second thought such as Coca Colar Dolor sit amet, consectetur adipisicing elit , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                                 <a href="about.html" class="btn-primary">View full details</a>
@@ -139,28 +139,29 @@
             </section>
             <section class="home-counters">
                 <div class="l-wrap home-counters-wrap">
+                    <h3>My statistics</h3>
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-3">
                             <div class="home-counter-item counter-projects">
-                                <h3>2536</h3>
+                                <p class="counters-figures">2536</p>
                                 <p>Projects completed</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
                             <div class="home-counter-item counter-clients">
-                                <h3>6784</h3>
+                                <p class="counters-figures">6784</p>
                                 <p>Happy clients</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
                             <div class="home-counter-item counter-coffee">
-                                <h3>2239</h3>
+                                <p class="counters-figures">2239</p>
                                 <p>Cups of coffee</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
                             <div class="home-counter-item counter-professionals">
-                                <h3>435</h3>
+                                <p class="counters-figures">435</p>
                                 <p>Real professionals</p>
                             </div>
                         </div>
@@ -247,7 +248,7 @@
                 </div>
             </section>
             <section class="home-blog">
-                <div class="l-wrap home-blog-wrap row">
+                <div class="l-wrap home-blog-wrap">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-12">
                             <div class="m-section-heading">
@@ -264,9 +265,9 @@
                                     </div>
                                     <div class="home-blog-post-details">
                                         <img src="img/user.png" alt="Photo de Mark Wiens" title="" />
-                                        <p>Mark Wiens</p>
+                                        <p class="post-author" >Mark Wiens</p>
                                         <div class="blog-post-date">
-                                            <p>13th Dec <i class="far fa-heart"></i> 15 <i class="far fa-comment"></i> 04</p>
+                                            <p><time datetime="2017-12-13">13th Dec</time><i class="far fa-heart"></i> 15 <i class="far fa-comment"></i> 04</p>
                                         </div>
                                     </div>
                                     <h4>Break through self doubt and fear</h4>
@@ -284,7 +285,7 @@
                                         <img src="img/user.png" alt="Photo de Mark Wiens" title="" />
                                         <p class="post-author">Mark Wiens</p>
                                         <div class="blog-post-date">
-                                            <p>9th Dec <i class="far fa-heart"></i> 26 <i class="far fa-comment"></i> 08</p>
+                                            <p><time datetime="2017-12-09">9th Dec</time><i class="far fa-heart"></i> 26 <i class="far fa-comment"></i> 08</p>
                                         </div>
                                     </div>
                                     <h4>Portable fashion for young women</h4>
@@ -302,7 +303,7 @@
                                         <img src="img/user.png" alt="Photo de Mark Wiens" title="" />
                                         <p class="post-author">Mark Wiens</p>
                                         <div class="blog-post-date">
-                                            <p>2th Dec <i class="far fa-heart"></i> 11 <i class="far fa-comment"></i> 15</p>
+                                            <p><time datetime="2017-12-02">2th Dec</time><i class="far fa-heart"></i> 11 <i class="far fa-comment"></i> 15</p>
                                         </div>
                                     </div>
                                     <h4>Do dreams serve as a premonition</h4>
@@ -313,7 +314,6 @@
                     </div>
                 </div>
             </section>
-            <!-- Pas en section car une section nécessite un titre. Solution : mettre un titre en display: none ? -->
             <aside class="m-quality">
                 <div class="l-wrap m-quality-wrap">
                     <a href="#"><img src="img/l1.png" alt="Logo Creative Label Premium" title="" /></a>
@@ -341,8 +341,7 @@
                             <form class="newsletter-form" action="traitement-newsletter.php" method="post">
                                     <label for="mail">Mail</label>
                                     <input type="email" name="mail" id="mail" placeholder="Enter Email Adress">
-                                    <!--Peut-on mettre un logo de fleche en value ? Je sais qu'on peut remplacer la valeur via css et background. A vérifier.-->
-                                    <input type="submit" value="➔">
+                                    <input type="submit" value="&rightarrow;">
                             </form>
                         </div>
                     </div>

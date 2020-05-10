@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    z-index: 1;
+    z-index: 9999;
     box-shadow: 0px 2px 8px 0px rgba(#eeeeee,0.3);
 }
 
@@ -32,17 +32,15 @@
     position: relative;
     height: 3rem; // Navigateurs n'affichent pas la div en block si pas de hauteur > Zone de click très restreinte sans.
     cursor: pointer; // Pas nécessaire pour le mobile.
+    z-index: 9999;
 
     .burger {
         position: absolute;
         top: calc(50% - 1.5px); // 50% - la moitié de la taille de l'élement (cf. height).
-        right: 1.5rem;
-    
+        right: 2.2rem;
         width: 24px;
         height: 3px;
-    
         background-color: $color-title;
-
         transition: all 0.5s;
 
         &::before, &::after {
@@ -68,7 +66,7 @@
 
     /* From hamburger menu to closure cross */
     &.nav-active > .burger {
-            background-color: $color-bg-primary;
+            background-color: transparent;
             transition: background-color 0.5s;
     }
 
@@ -94,7 +92,7 @@
     height: 100vh;
     background: rgba(#000, 0.94);
 
-    transition: left 0.5s linear;
+    transition: left 0.5s;
 
     ul {
         padding: 1.5rem 1rem;
@@ -117,8 +115,35 @@
     /* Active nav */
     &.is-active {
         left: 0;
-        transition: width 0.5s;
+        transition: left 0.5s;
 
-        transition: left 0.5s linear;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            background: black;
+            opacity: 0.45;
+            z-index: -9999;
+
+            animation: opacityOnBody 2s;
+        }
+    }
+}
+
+@keyframes opacityOnBody {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.45;
     }
 }

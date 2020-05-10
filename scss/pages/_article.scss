@@ -1,0 +1,151 @@
+/* Article */
+
+.article {
+    background-color : $color-bg-secondary;
+}
+
+.article-release-wrap {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    .article-img-title {
+        padding-bottom: 1.5rem;
+    }
+
+    .author-social a {
+        padding: 0.5rem 1rem;
+    }
+
+    h2 {
+        text-transform: capitalize;
+    }
+
+    .article-emphasis {
+        background-color: $color-bg-primary;
+        padding: 1.5rem;
+    }
+}
+
+.article-img-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+
+    img {
+        max-width: 45%;
+    }
+}
+
+/* Prévious & Next articles */
+.article-others-wrap {
+    border-top: 2px solid #f1f0ee;
+    padding: 3rem 0;
+    margin: 0 1rem;
+}
+
+.article-previous {
+    padding-bottom: 1.5rem;
+}
+
+.article-next {
+    padding-top : 1.5rem;
+    text-align: right;
+}
+
+.article-previous a, .article-next a {
+    display: flex;
+    align-items: center;;
+
+    div {
+        @include custom-grid(10);
+    }
+
+    img {
+        @include custom-grid(2);
+        height: 100%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        padding: 0;
+    }
+
+    p {
+        padding: 0 0 1rem 0;
+        text-transform: capitalize;
+    }
+}
+
+.article-previous-text {
+    padding-left: 1rem;
+}
+
+.article-next-text {
+    padding-right: 1rem;
+}
+
+/* Article comments */
+.article-old-comments-wrap {
+    margin: 0 1rem;
+    padding: 3rem 1rem;
+    border: 2px solid #f1f0ee;
+}
+
+.article-old-comments-wrap {
+    text-align: center;
+    h3 {
+        padding-bottom: 3rem;
+        text-transform: capitalize;
+    }
+}
+
+.article-comment-detail {
+    text-align: left;
+    
+    p {
+        padding: 0 0 0 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    .comment-author {
+        font-weight: bold;
+        font-size: 1rem;
+        color: $color-title;
+    }
+
+    .comment-date {
+        color: lighten($color-txt, 20%);
+    }
+
+    .comment-text {
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/*Article comments form */
+
+.article-new-comments-wrap {
+    margin: 3rem 1rem;
+    padding: 3rem 1rem;
+    border: 2px solid #f1f0ee;
+    text-align: center;
+    
+    h3 {
+        padding-bottom: 3rem;
+    }
+
+    form {
+        label {
+            display: none;
+        }
+    }
+}
+
+.send-message input {
+    margin-left: auto;
+    margin-right: auto;
+    background: $color-primary;
+}
+

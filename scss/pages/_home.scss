@@ -13,6 +13,7 @@
 
 /* Home slider */
 .home-slider-wrap {
+    padding-top: 8rem;
     padding-bottom: 0;
 
     img {
@@ -21,6 +22,15 @@
         width: 80%;
         padding-top: 5rem;
     }
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: $color-title;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    font-weight: bold;
 }
 
 @media screen and (min-width: map-get($responsive-table, -md)) {
@@ -38,6 +48,10 @@
 }
 
 /* Home My Offered Services */
+.home-services-wrap {
+    padding-bottom: 3.5rem;
+}
+
 .home-service-details {
     text-align: center;
     padding: 1rem 0 2.5rem;
@@ -67,29 +81,36 @@
 .home-counters-wrap {
     padding: 5rem 0;
     text-align: center;
+    
+    h3 {
+        display: none;
+    }
 
     .home-counter-item {
         padding: 2rem 0;
 
-        h3, p {
-        color: $color-bg-primary;
+        p {
+            color: $color-bg-primary;
+            padding: 0;
         }
 
-        h3 {
+        .counters-figures {
             font-size: 2.5rem;
             font-weight: bold;
-        }
-
-        p {
-            padding: 0;
         }
     }
 }
 
 /* Home Latest projects */
-
+.home-projects-wrap {
+    padding-bottom: 3.5rem;
+}
 
 /* Home latest blogs posts */
+.home-blog-wrap {
+    padding-bottom: 2rem;
+}
+
 .home-blog-post {
     padding: 1.5rem 0;
 
@@ -107,6 +128,10 @@
     padding: 0.5rem 0;
 
     border-bottom: 1px solid lighten($color-txt, 40%);
+
+    .post-author {
+        color: darken($color-txt, 30%);
+    }
 
     .blog-post-date {
         margin-left: auto;
