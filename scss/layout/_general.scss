@@ -7,3 +7,10 @@
         padding: 5rem 2.5rem 5rem;
     }
 }
+
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .l-wrap {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}

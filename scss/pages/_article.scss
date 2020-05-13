@@ -4,48 +4,31 @@
     background-color : $color-bg-secondary;
 }
 
-.article-release-wrap {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+.article-img-title {
+    padding-bottom: 1.5rem;
+}
 
-    .article-img-title {
-        padding-bottom: 1.5rem;
-    }
+.author-social {
+    padding: 0.5rem 1rem;
+}
 
-    .author-social {
-        padding: 0.5rem 1rem;
-    }
+h2 {
+    text-transform: capitalize;
+}
 
-    h2 {
-        text-transform: capitalize;
-    }
-
-    .article-emphasis {
-        background-color: $color-bg-primary;
-        padding: 1.5rem;
-    }
+.article-emphasis {
+    background-color: $color-bg-primary;
+    padding: 1.5rem;
 }
 
 @media screen and (min-width: map-get($responsive-table, -md)) {
     .article-release-wrap {
+        padding-right: 1rem;
+        padding-left: 1rem;
+
         h2 {
             padding-top: 0;
         }
-
-        .author-social {
-            text-align: right;
-            padding-right: 1rem;
-
-            a {
-                padding: 0.5rem 0.5rem;
-
-                &:last-child {
-                    padding-right: 0;
-                }
-            }
-        }
-        
-        
     }
 }
 
@@ -77,15 +60,15 @@
 
 .article-previous a, .article-next a {
     display: flex;
-    align-items: center;;
+    align-items: center;
 
     div {
         @include custom-grid(10);
     }
 
     img {
-        @include custom-grid(2);
-        // height: 100%;
+        flex: 0 0 16.66666%;
+        max-width: 55px;
     }
 
     h2 {
@@ -108,10 +91,12 @@
     padding-right: 1rem;
 }
 
+// Revoir poids des selecteurs !
 @media screen and (min-width: map-get($responsive-table, -md)) {
     .article-others-wrap {
         display: flex;
         justify-content: space-between;
+        margin-left: 1rem;
 
         .article-previous, .article-next {
             @include custom-grid(6);
@@ -137,6 +122,7 @@
 
 .article-old-comments-wrap {
     text-align: center;
+
     h3 {
         padding-bottom: 3rem;
         text-transform: capitalize;
@@ -145,7 +131,15 @@
 
 .article-comment-detail {
     text-align: left;
-    
+
+    .comment-image {
+        text-align: right;
+
+        img {
+            max-width: 50px;
+        }
+    }
+        
     p {
         padding: 0 0 0 0.7rem;
         font-size: 0.8rem;
@@ -168,7 +162,6 @@
 }
 
 /*Article comments form */
-
 .article-new-comments-wrap {
     margin: 3rem 1rem;
     padding: 3rem 1rem;
@@ -183,6 +176,10 @@
         label {
             display: none;
         }
+
+        input, textarea {
+            border: none;
+        }
     }
 }
 
@@ -192,3 +189,12 @@
     background: $color-primary;
 }
 
+
+// A revoir !
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .comment-form-field {
+        input {
+            padding: 1rem;
+        }   
+    }
+}

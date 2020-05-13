@@ -79,3 +79,9 @@ form {
         font-size: 0.9rem;
     }
 }
+
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    p, q {
+        font-size: 1rem;
+    }
+}

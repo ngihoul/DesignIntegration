@@ -47,6 +47,12 @@
     }
 }
 
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .home-slider-wrap img {
+        padding: 0 2.5rem;
+    }
+}
+
 /* Home My Offered Services */
 .home-services-wrap {
     padding-bottom: 3.5rem;
@@ -83,6 +89,31 @@
             padding-left: 1.5rem;
         }
     }
+}
+
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .home-services {
+        // Utilisation des class de la grille pour éviter d'utiliser les class "webdesign", "webdev", etc. > Maintenabilité accrue.
+        .col-md-6:nth-child(even) {
+            padding-right: 0;
+        }
+
+        .col-md-6:nth-child(odd) {
+            padding-left: 0;
+        }
+
+        .col-md-6:nth-child(3n+2) {
+            padding-right: 1.5rem;
+        }
+    
+        .col-md-6:nth-child(3n+3) {
+            padding: 0 0.75rem;
+        }
+
+        .col-md-6:nth-child(3n+4) {
+            padding-left: 1.5rem;
+        }
+    }    
 }
 
 /* Home Counters */

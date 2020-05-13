@@ -32,9 +32,23 @@
             width: #{$skill-pc};
             @include bg-gradient;
             border-radius: 50px;
+
+            animation: growUp-#{$tool} 2s ;
+        }
+
+        @keyframes growUp-#{$tool} {
+            from {
+                width: 0%;
+            }
+
+            to {
+                width: #{$skill-pc};
+            }
         }
     }
 }
+
+
 
 .about-tool-details {
     padding-bottom: 2.5rem;
@@ -96,15 +110,18 @@
 
     .about-feedback-quote {
         display: flex;
+        justify-content: space-between;
     }
 
     .about-feedback-quote-item {
         display: block;
+        flex: 0 0 48%;
+        max-width: 48%;
         &:first-child {
-            margin-right: 1.25rem;
+            margin-right: 0.5rem;
         }
         &:last-child  {
-            margin-left: 1.25rem;
+             margin-left: 0.5rem;
         }
     }
 }

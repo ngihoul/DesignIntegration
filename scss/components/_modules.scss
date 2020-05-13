@@ -77,6 +77,12 @@
     }
 }
 
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .m-about-wrap img {
+        padding: 0 2.5rem;
+    }
+}
+
 /* Premium Quality -- Home.html & About.html */
 .m-quality {
     @include bg-gradient;
@@ -132,6 +138,33 @@
     }
 }
 
+.m-projects-thumbnails {
+    position: relative;
+
+    &:hover::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include bg-gradient;
+        opacity: 0.7;
+        width: 100%;
+        height: 100%;
+        border-radius : 8px;
+        z-index: 1;
+    }
+
+    &:hover::after {
+        content: url('../img/preview.png');
+        display: block;
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 29px);
+        z-index: 2;
+    }
+}
+
 @media screen and (min-width: map-get($responsive-table, -md)) {
     .m-projects {
         // Utilisation des class de la grille pour éviter d'utiliser les class "webdesign", "webdev", etc. > Maintenabilité accrue.
@@ -149,11 +182,34 @@
     }
 }
 
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .m-projects {
+        .col-md-6:nth-child(even) {
+            padding-right: 0;
+        }
+
+        .col-md-6:nth-child(odd) {
+            padding-left: 0;
+        }
+
+        .col-md-6:nth-child(3n+2) {
+            padding-right: 1.5rem;
+        }
+    
+        .col-md-6:nth-child(3n+3) {
+            padding: 0 0.75rem;
+        }
+
+        .col-md-6:nth-child(3n+4) {
+            padding-left: 1.5rem;
+        }
+    }
+}
+
 /* Aside -- Blog.html & Article.html */
 /* Blog aside */
 .m-aside-blog-wrap {
-    margin: 0 1rem 5rem;
-    padding: 3rem 2rem;
+    padding: 3rem 1rem;
     border: 2px solid #f1f0ee;
 }
 

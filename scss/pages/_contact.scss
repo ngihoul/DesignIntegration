@@ -1,17 +1,16 @@
 .contact-wrap {
     padding: 0;
-
     background-color: $color-bg-secondary;
+}
+
+.l-wrap.contact-googlemap-wrap {
+    padding-bottom: 0;
 }
 
 .contact-googlemap {
     iframe {
         width: 100%;
     }
-}
-
-.contact-details {
-    padding: 3.5rem 1rem;
 }
 
 .contact-details-item {
@@ -39,7 +38,7 @@
 }
 
 .contact-form {
-    padding: 0 1rem 5rem;
+    padding: 5rem 0 0;
 
     label {
         display: none;
@@ -50,4 +49,30 @@
     display: flex;
     justify-content: flex-end;
 
+}
+
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .contact-form {
+        padding: 0 0 0 1rem;
+    
+        label {
+            display: none;
+        }
+
+        input, textarea {
+            width: 95%;
+        }
+
+        input {
+            padding: 1.2rem;
+
+            &[type=submit] {
+                width: 65%;
+            }
+        }
+
+        textarea {
+            height: 15rem;
+        }
+    }
 }

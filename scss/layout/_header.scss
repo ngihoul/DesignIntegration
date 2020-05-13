@@ -181,3 +181,10 @@
         }
     }
 }
+
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .l-header-wrap {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}
