@@ -238,8 +238,7 @@
 @media screen and (min-width: 800px){
     .blog-post-date p {
         font-size: 0.8rem;
-    }
-            
+    }       
 }
 
 @media screen and (min-width: 850px){
@@ -247,4 +246,30 @@
         font-size: 0.9rem;
     }
             
+}
+
+// Effet de zoom sur photos articles
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .home-blogs-post-thumbnail {
+        overflow: hidden;
+    }
+
+    .home-blogs-post-thumbnail img {
+        transform: scale(1);
+        transition: transform 0.5s;
+    }
+
+    .home-blog-post a:hover {
+        > .home-blogs-post-thumbnail img {
+            transform: scale(1.2);
+            transition: transform 0.5s;
+        }
+
+        > h4 {
+            color: $color-primary;
+            transition: color 0.5s;
+        }
+    }
+    
+    
 }

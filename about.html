@@ -10,7 +10,7 @@
         https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards
         -->
         <script src="https://kit.fontawesome.com/dd6e6a21ba.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./css/screen.css" type="text/css" />
+        <link rel="stylesheet" href="./css/screen.css" type="text/css" media="screen" />
         <title>ISLweb - Nicolas Gihoul - Examen Mai 2020</title>
         <meta name="description" content="Travail de fin d'année 2020 par Nicolas Gihoul pour le cours de création de sites statiques donné par Ludovic Evrard."/>
     </head>
@@ -50,7 +50,16 @@
                 <div class="l-wrap m-about-wrap">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-6">
-                            <img src="img/about-img.png" alt="Photo de Jean-Charles ISLweb" title="" />
+                            <img 
+                                srcset="img/about-img-s.png 350w,
+                                        img/about-img-m.png 450w,
+                                        img/about-img.png 555w"
+                                sizes="(max-width: 859px) 100vw,
+                                        50vw"
+                                src="img/about-img.png" 
+                                alt="Photo de Jean-Charles ISLweb" 
+                                title="" 
+                            />
                         </div>
                         <div class="col-12 col-md-6 col-lg-6">
                             <div class="m-about-me">
@@ -121,10 +130,10 @@
             <aside class="m-quality">
                 <div class="l-wrap m-quality-wrap">
                     <a href="#"><img src="img/l1.png" alt="Logo Creative Label Premium" title="" /></a>
-                    <a href="#"><img src="img/l2.png" alt="Logo Creative Label Premium" title="" /></a>
-                    <a href="#"><img src="img/l3.png" alt="Logo Creative Label Premium" title="" /></a>
-                    <a href="#"><img src="img/l4.png" alt="Logo Creative Label Premium" title="" /></a>
-                    <a href="#"><img src="img/l5.png" alt="Logo Creative Label Premium" title="" /></a>
+                    <a href="#"><img src="img/l2.png" loading="lazy" alt="Logo Creative Label Premium" title="" /></a>
+                    <a href="#"><img src="img/l3.png" loading="lazy" alt="Logo Creative Label Premium" title="" /></a>
+                    <a href="#"><img src="img/l4.png" loading="lazy" alt="Logo Creative Label Premium" title="" /></a>
+                    <a href="#"><img src="img/l5.png" loading="lazy" alt="Logo Creative Label Premium" title="" /></a>
                 </div>
             </aside>
         </main>

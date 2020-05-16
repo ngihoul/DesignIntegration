@@ -17,7 +17,7 @@
 }
 
 .next-row::after {
-    @include custom-icon("\f061");
+    content: '⇁';
     padding: 0 0.5rem;
 }
 
@@ -44,10 +44,7 @@
         h3 {
             padding-bottom: 0.5rem;
         }
-
     }
-    
-    
 }
 
 /* About me -- Home.html & About.html */
@@ -128,6 +125,12 @@
     }
 }
 
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .m-quality-wrap {
+        padding: 5rem 0;
+    }
+}
+
 /* Projects thumbnails */
 .m-projects-presentation {
     padding-top: 1.5rem;
@@ -138,10 +141,12 @@
     }
 }
 
-.m-projects-thumbnails {
-    position: relative;
+.m-projects-presentation a:hover {
+    .m-projects-thumbnails {
+        position: relative;
+    }
 
-    &:hover::before {
+    > .m-projects-thumbnails::before {
         content: '';
         display: block;
         position: absolute;
@@ -155,7 +160,7 @@
         z-index: 1;
     }
 
-    &:hover::after {
+    > .m-projects-thumbnails::after {
         content: url('../img/preview.png');
         display: block;
         position: absolute;
@@ -269,6 +274,12 @@
     }
 }
 
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .m-aside-blog-categorie a:hover > .categorie-name {
+        color: $color-primary;
+    }
+}
+
 /* Aside -- Newsletter */
 .m-aside-blog-newsletter {
     text-align: center;
@@ -300,8 +311,27 @@
             background-color: $color-primary;
             border-color: $color-primary;
             color: #fff;
-        }
+            cursor: pointer;
 
+            &:hover {
+                background-color: $color-secondary;
+                border-color: $color-secondary;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .m-aside-blog-wrap {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .m-aside-blog-wrap {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
 

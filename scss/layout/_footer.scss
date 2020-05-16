@@ -37,6 +37,7 @@
             @include custom-grid(2);
             background-color: $color-primary;
             color: $color-bg-primary;
+            cursor: pointer;
 
             &:hover, &:active {
                 background-color: $color-secondary;
@@ -72,9 +73,9 @@
 }
 
 @media screen and (min-width: map-get($responsive-table, -md)) {
-.l-footer-wrap {
-    padding: 5rem 1.5rem;
-}
+    .l-footer-wrap {
+        padding: 5rem 1.5rem;
+    }
 
     .l-footer-about {
         padding-right: 1.5rem;
@@ -91,5 +92,11 @@
         a {
             padding: 0.6rem; 
         }
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .l-footer-wrap {
+        padding: 5rem 2rem;
     }
 }

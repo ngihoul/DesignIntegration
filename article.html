@@ -10,7 +10,7 @@
         https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards
         -->
         <script src="https://kit.fontawesome.com/dd6e6a21ba.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./css/screen.css" type="text/css" />
+        <link rel="stylesheet" href="./css/screen.css" type="text/css" media="screen" />
         <title>ISLweb - Nicolas Gihoul - Examen Mai 2020</title>
         <meta name="description" content="Travail de fin d'année 2020 par Nicolas Gihoul pour le cours de création de sites statiques donné par Ludovic Evrard."/>
     </head>
@@ -37,23 +37,32 @@
             </div>
         </header>
         <main id="mainNavOpen" class="l-main">
-            <div class="article">
-                <div class="article-wrap">
-                    <div class="m-page-heading">
-                        <div class="l-wrap m-page-heading-wrap">
-                            <h1>Blog details page</h1>
-                            <div class="m-breadcrumb">
-                                <a class="next-row icon" href="index.html">Home</a>
-                                <a class= "next-row icon" href="blog.html">Blog</a>
-                                <a href="article.html">Blog details page</a>
-                            </div>
-                        </div>
+            <div class="m-page-heading">
+                <div class="l-wrap m-page-heading-wrap">
+                    <h1>Blog details page</h1>
+                    <div class="m-breadcrumb">
+                        <a class="next-row icon" href="index.html">Home</a>
+                        <a class= "next-row icon" href="blog.html">Blog</a>
+                        <a href="article.html">Blog details page</a>
                     </div>
-                    <div class="row">
+                </div>
+            </div>
+                <div class="article">
+                    <div class="l-wrap article-wrap">
+                        <div class="row">
                         <div class="col-12 col-md-8 col-lg-8">
                             <article class="article-release">
-                                <div class="l-wrap article-release-wrap">
-                                    <img class="article-img-title" src="img/blog/feature-img1.jpg" alt="Une blonde sur un cheval">
+                                <div class="article-release-wrap">
+                                    <img 
+                                        srcset="img/blog/feature-img1-s.jpg 338w,
+                                                img/blog/feature-img1-m.jpg 563w,
+                                                img/blog/feature-img1.jpg 750w"
+                                        sizes="(min-width: 860px) 40vw,
+                                                100vw"
+                                        src="img/blog/feature-img1.jpg" 
+                                        alt="Une blonde sur un cheval"
+                                        title="" 
+                                    />
                                 <div class="row">
                                     <div class="col-12 col-md-3 col-lg-3">
                                         <div class="blog-article-infos">
@@ -71,7 +80,7 @@
                                                 <div class="col-6 col-md-12 col-lg-12">
                                                     <p class="blog-article-comments icon">06 Comments</p>
                                                 </div>
-                                                <div class="col-6 col-md-12 col-lg-12">
+                                                <div class="col-12 col-md-12 col-lg-12">
                                                     <div class="author-social">
                                                         <a href="#">
                                                             <i class="fab fa-facebook-f"></i>
@@ -99,15 +108,37 @@
                                 </div>
                                 <p class="article-emphasis">MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.</p>
                                 <div class="article-img-wrap">
-                                        <img class="article-img-mini" src="./img/blog/post-img1.jpg" alt="Des fleurs" title="">
-                                        <img class="article-img-mini" src="./img/blog/post-img2.jpg" alt="Des gens" title="">
+                                    <img 
+                                        class="article-img-mini" 
+                                        src="./img/blog/post-img1.jpg" 
+                                        srcset="./img/blog/post-img1-s.jpg 150w, 
+                                                ./img/blog/post-img1-m.jpg 270w, 
+                                                ./img/blog/post-img1.jpg 360w" 
+                                        sizes="(max-width: 859px) 50vw, 
+                                                30vw" 
+                                        loading="lazy" 
+                                        alt="Des fleurs" 
+                                        title="" 
+                                    />
+                                    <img 
+                                        class="article-img-mini" 
+                                        src="./img/blog/post-img2.jpg" 
+                                        srcset="./img/blog/post-img2-s.jpg 150w, 
+                                                ./img/blog/post-img2-m.jpg 270w, 
+                                                ./img/blog/post-img2.jpg 360w" 
+                                        sizes="(max-width: 859px) 50vw, 
+                                                30vw" 
+                                        loading="lazy" 
+                                        alt="Des gens" 
+                                        title="" 
+                                    />
                                 </div>
                                 <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower.</p>
                                 <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower.</p>
                                 </div>
                             </article>
                             <div class="article-others">
-                                <div class="l-wrap article-others-wrap">
+                                <div class="article-others-wrap">
                                     <div class="article-previous">
                                         <a href="article.html">
                                             <img src="./img/blog/prev.jpg" alt="Article précédent">
@@ -131,7 +162,7 @@
                             <section class="article-comments">
                                 <div class="article-comments-wrap">
                                     <div class="article-old-comments">
-                                        <div class="l-wrap article-old-comments-wrap">
+                                        <div class="article-old-comments-wrap">
                                             <h3>05 comments</h3>
                                             <div class="article-comment-detail">
                                                 <div class="row">
@@ -239,18 +270,18 @@
                                         </div>
                                     </div>
                                     <div class="article-new-comments">
-                                        <div class="l-wrap article-new-comments-wrap">
+                                        <div class="article-new-comments-wrap">
                                             <h3>Leave a Comment</h3>
                                             <form action="traitement.php" method="POST">
                                                 <div class="row">
                                                     <div class="col-12 col-md-6 col-lg-6">
-                                                        <div class="comment-form-field">
+                                                        <div class="comment-form-field name">
                                                             <label for="name">Name :</label>
                                                             <input type="text" id="name" name="name" placeholder="Enter your name" required />
                                                         </div>
                                                     </div>
                                                     <div class="col-12 col-md-6 col-lg-6">
-                                                        <div class="comment-form-field">
+                                                        <div class="comment-form-field email">
                                                             <label for="email">Email :</label>
                                                             <input type="email" id="email" name="email" placeholder="Enter your email" required />
                                                         </div>
@@ -283,7 +314,15 @@
                                         </form>
                                     </div>
                                     <section class="m-aside-blog-author">
-                                        <img src="img/blog/user-info.png" alt="Charlie Barber">
+                                        <img 
+                                            src="img/blog/user-info.png" 
+                                            srcset="img/blog/user-info-s.png 90w, 
+                                                    img/blog/user-info.png 120w"
+                                            sizes="(max-width: 859px) 33vw,
+                                                    12vw"
+                                            alt="Charlie Barber"
+                                            title=""
+                                        />
                                         <h4 class="author-name"><a href="#">Charlie Barber</a></h4>
                                         <p class="author-role">Senior blog writer</p>
                                         <div class="author-social">
@@ -408,6 +447,7 @@
                                     </section>
                                 </div>
                             </aside>
+                        </div>
                         </div>
                     </div>
                 </div>

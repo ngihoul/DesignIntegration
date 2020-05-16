@@ -10,7 +10,7 @@
         https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards
         -->
         <script src="https://kit.fontawesome.com/dd6e6a21ba.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./css/screen.css" type="text/css" />
+        <link rel="stylesheet" href="./css/screen.css" type="text/css" media="screen" />
         <title>ISLweb - Nicolas Gihoul - Examen Mai 2020</title>
         <meta name="description" content="Travail de fin d'année 2020 par Nicolas Gihoul pour le cours de création de sites statiques donné par Ludovic Evrard."/>
     </head>
@@ -48,7 +48,15 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-6">
-                            <img src="img/hero-img.png" alt="Photo de Jean-Charles ISLweb" title="" />
+                            <img 
+                                src="img/hero-img.png"
+                                srcset="img/hero-img.png 483w, 
+                                        img/hero-img-s.png 400w" 
+                                sizes="(max-width: 859px) 100vw, 
+                                        50vw" 
+                                alt="Photo de Jean-Charles ISLweb" 
+                                title="" 
+                            />
                         </div>
                     </div>
                 </div>
@@ -57,7 +65,16 @@
                 <div class="l-wrap m-about-wrap">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-6">
-                            <img src="img/about-img.png" alt="Photo de Jean-Charles ISLweb" title="" />
+                            <img 
+                                src="img/about-img.png" 
+                                srcset="img/about-img-s.png 350w, 
+                                        img/about-img-m.png 450w, 
+                                        img/about-img.png 555w" 
+                                sizes="(max-width: 859px) 100vw, 
+                                        50vw" 
+                                alt="Photo de Jean-Charles ISLweb" 
+                                title="" 
+                            />
                         </div>
                         <div class="col-12 col-md-6 col-lg-6">
                             <div class="m-about-me">
@@ -181,7 +198,7 @@
                                 <!-- Sur la page d'accueil, j'ai choisi de mettre un lien sur l'ensemble du bloc pour faciliter l'accessibilité. -->
                                 <a href="portfolio.html">
                                     <div class="m-projects-thumbnails">
-                                        <img src="img/p1.jpg" alt="ISLweb Vinyl Design 2D Vector Cornet de fleurs" title="" />
+                                        <img src="img/p1.jpg" loading="lazy" alt="ISLweb Vinyl Design 2D Vector Cornet de fleurs" title="" />
                                     </div>
                                     <h4>2D Vinyl design</h4>
                                     <p>vector</p>
@@ -192,7 +209,7 @@
                             <div class="m-projects-presentation">
                                 <a href="portfolio.html">
                                     <div class="m-projects-thumbnails">
-                                        <img src="img/p2.jpg" alt="ISLweb Vinyl Design 2D Vector Colier de fleurs" title="" />
+                                        <img src="img/p2.jpg" loading="lazy" alt="ISLweb Vinyl Design 2D Vector Colier de fleurs" title="" />
                                     </div>
                                     <h4>2D Vinyl design</h4>
                                     <p>vector</p>
@@ -203,7 +220,7 @@
                             <div class="m-projects-presentation">
                                 <a href="portfolio.html">
                                     <div class="m-projects-thumbnails">
-                                        <img src="img/p3.jpg" alt="ISLweb Creative Poster Design Sucette Colorées" title="" />
+                                        <img src="img/p3.jpg" loading="lazy" alt="ISLweb Creative Poster Design Sucette Colorées" title="" />
                                     </div>
                                     <h4>Creative poster design</h4>
                                     <p>Agency</p>
@@ -214,7 +231,7 @@
                             <div class="m-projects-presentation">
                                 <a href="portfolio.html">
                                     <div class="m-projects-thumbnails">
-                                        <img src="img/p4.jpg" alt="ISLweb Embossed Logo Design Chien Dalmatien" title=" /">
+                                        <img src="img/p4.jpg" loading="lazy" alt="ISLweb Embossed Logo Design Chien Dalmatien" title=" /">
                                     </div>
                                     <h4>Embossed logo design</h4>
                                     <p>Portal</p>
@@ -225,7 +242,7 @@
                             <div class="m-projects-presentation">
                                 <a href="portfolio.html">
                                     <div class="m-projects-thumbnails">
-                                        <img src="img/p5.jpg" alt="ISLweb 3D Helmet Design Assiette de fleurs" title="" />
+                                        <img src="img/p5.jpg" loading="lazy" alt="ISLweb 3D Helmet Design Assiette de fleurs" title="" />
                                     </div>
                                     <h4>3D Helmet design</h4>
                                     <p>vector</p>
@@ -236,7 +253,7 @@
                             <div class="m-projects-presentation">
                                 <a href="portfolio.html">
                                     <div class="m-projects-thumbnails">
-                                        <img src="img/p6.jpg" alt="ISLweb Vinyl Design 2D Arbre de Pâques" title="" />
+                                        <img src="img/p6.jpg" loading="lazy" alt="ISLweb Vinyl Design 2D Arbre de Pâques" title="" />
                                     </div>
                                     <h4>2D Vinyl design</h4>
                                     <p>raster</p>
@@ -260,7 +277,7 @@
                                 <!-- Sur la page d'accueil, j'ai choisi de mettre un lien sur l'ensemble du bloc pour faciliter l'accessibilité. -->
                                 <a href="article.html">
                                     <div class="home-blogs-post-thumbnail">
-                                        <img src="img/b1.jpg" alt="ISLweb blog posts picture City skyline" title="" />    
+                                        <img src="img/b1.jpg" loading="lazy" alt="ISLweb blog posts picture City skyline" title="" />    
                                     </div>
                                     <div class="home-blog-post-details">
                                         <img src="img/user.png" alt="Photo de Mark Wiens" title="" />
@@ -278,7 +295,7 @@
                             <div class="home-blog-post">
                                 <a href="article.html">
                                     <div class="home-blogs-post-thumbnail">
-                                        <img src="img/b2.jpg" alt="ISLweb blog posts picture City skyline" title="" />    
+                                        <img src="img/b2.jpg" loading="lazy" alt="ISLweb blog posts picture City skyline" title="" />    
                                     </div>
                                     <div class="home-blog-post-details">
                                         <img src="img/user.png" alt="Photo de Mark Wiens" title="" />
@@ -296,7 +313,7 @@
                             <div class="home-blog-post">
                                 <a href="article.html">
                                     <div class="home-blogs-post-thumbnail">
-                                        <img src="img/b3.jpg" alt="ISLweb blog posts picture City skyline" title="" />    
+                                        <img src="img/b3.jpg" loading="lazy" alt="ISLweb blog posts picture City skyline" title="" />    
                                     </div>
                                     <div class="home-blog-post-details">
                                         <img src="img/user.png" alt="Photo de Mark Wiens" title="" />
@@ -316,10 +333,10 @@
             <aside class="m-quality">
                 <div class="l-wrap m-quality-wrap">
                     <a href="#"><img src="img/l1.png" alt="Logo Creative Label Premium" title="" /></a>
-                    <a href="#"><img src="img/l2.png" alt="Logo Creative Label Premium" title="" /></a>
-                    <a href="#"><img src="img/l3.png" alt="Logo Creative Label Premium" title="" /></a>
-                    <a href="#"><img src="img/l4.png" alt="Logo Creative Label Premium" title="" /></a>
-                    <a href="#"><img src="img/l5.png" alt="Logo Creative Label Premium" title="" /></a>
+                    <a href="#"><img src="img/l2.png" loading="lazy" alt="Logo Creative Label Premium" title="" /></a>
+                    <a href="#"><img src="img/l3.png" loading="lazy" alt="Logo Creative Label Premium" title="" /></a>
+                    <a href="#"><img src="img/l4.png" loading="lazy" alt="Logo Creative Label Premium" title="" /></a>
+                    <a href="#"><img src="img/l5.png" loading="lazy" alt="Logo Creative Label Premium" title="" /></a>
                 </div>
             </aside>
         </main>

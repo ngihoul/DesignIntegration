@@ -46,10 +46,8 @@
         &::before, &::after {
             content: '';
             position: absolute;
-
             width: 24px;
             height: 3px;
-
             background-color: $color-title;
         }
 
@@ -91,7 +89,6 @@
     width: 75vw;
     height: 100vh;
     background: rgba(#000, 0.94);
-
     transition: left 0.5s;
 
     ul {
@@ -102,10 +99,9 @@
         display: block;
         padding: 1rem;
         text-transform: uppercase;
-
         color: $color-bg-primary;
-
         font-size: 1.2rem;
+        transition: color 1s;
     }
 
     .link-active {
@@ -129,7 +125,7 @@
             opacity: 0.45;
             z-index: -9999;
 
-            animation: opacityOnBody 2s;
+            animation: opacityOnBody 1s;
         }
     }
 }
@@ -176,6 +172,7 @@
                     padding: 1rem 1.2rem;
                     color: $color-title;
                     font-size: 0.9rem;
+                    transition: color 1s;
                 }
             }
         }
@@ -186,5 +183,23 @@
     .l-header-wrap {
         max-width: 1140px;
         margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .l-header-logo a {
+        padding-left: 0;
+    }
+
+    .l-header-nav ul {
+        padding-right: 0;
+    
+        li a {
+            font-size: 1rem;
+
+            &:hover {
+                color: $color-primary;
+                transition: color 1s;
+            }
+        }
     }
 }

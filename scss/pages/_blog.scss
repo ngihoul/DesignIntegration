@@ -5,7 +5,7 @@
 
 .blog-heading {
     position: relative;
-    background: url('../img/blog/blog-home-banner.jpg') center top no-repeat;
+    background: url('../img/blog/blog-home-banner-m.jpg') center top no-repeat;
     background-size: cover; // Je n'arrive pas à l'inclure dans background ???
     text-align: center;
     height: 100vh;
@@ -46,7 +46,13 @@
 @media screen and (min-width: map-get($responsive-table, -md)) {
     .blog-heading {
         height: auto;
-        padding: 8rem 0 5rem;
+        padding: 8rem 0 5rem;background: url('../img/blog/blog-home-banner-l.jpg') center top no-repeat;
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .blog-heading {
+        padding: 8rem 0 5rem;background: url('../img/blog/blog-home-banner.jpg') center top no-repeat;
     }
 }
 
@@ -89,15 +95,18 @@
     }
 
     &.social {
-        background: url('../img/blog/cat-widget1.jpg');
+        background: url('../img/blog/cat-widget1.jpg') no-repeat;
+        background-size: cover;
     }
 
     &.politics {
-        background: url('../img/blog/cat-widget2.jpg');
+        background: url('../img/blog/cat-widget2.jpg') no-repeat;
+        background-size: cover;
     }
 
     &.food {
-        background: url('../img/blog/cat-widget3.jpg');
+        background: url('../img/blog/cat-widget3.jpg') no-repeat;
+        background-size: cover;
         margin-bottom: 0;
     }
 }
@@ -115,10 +124,22 @@
     .blog-cat-item {
         height: 10rem;
         padding: 2rem 0;
-        margin: 0 0.5rem;
+        margin-bottom: 0;
 
         h2 {
             font-size: 1.5rem;
+        }
+
+        &.social {
+            margin-right: 1rem;
+        }
+    
+        &.politics {
+            margin: 0 0.5rem 0;
+        }
+    
+        &.food {
+            margin-left: 1rem;
         }
     }
 }
@@ -170,7 +191,7 @@
 
 @media screen and (min-width: map-get($responsive-table, -md)) {
     .blog-articles-list-wrap {
-        padding: 0 1rem 5rem 0;
+        padding: 0 1.5rem 5rem 0;
     }
 
     .blog-article-infos {
@@ -191,18 +212,8 @@
     }
 }
 
-.blog-page-changer ul {
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-
-    li a {
-        padding: 0.5rem;
-        margin: 0 0.2rem;
-
-        &.is-active {
-            background-color: $color-primary;
-            color: #fff;
-        }
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .blog-articles-list-wrap {
+        padding-right: 2rem;
     }
 }

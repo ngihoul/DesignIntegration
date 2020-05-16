@@ -1,0 +1,18 @@
+Optimisation
+	- Images
+		* Photoshop (export pour le web) suivi de TinyPNG pour toutes les images
+		* Logo, project (px.jpg), blog (bx.jpg), ... 
+			> Pas d'utilisation de srcset et sizes car images de base déjà très petites.
+		* Fond du titre de la page blog
+			> image responsive via css background
+		* Lazy loading sur images après scroll down (supporté par Edge, Firefox, Chrome, Opera, Android Browser & Chrome for Android).
+
+Responsive
+	- Breakpoints
+		* smartphone < 860px
+		* tablette > 860px & < 1140px
+		* pc > 1140px
+
+Design
+	- Tablette
+		* 2 éléments par ligne sauf pour les posts blog

@@ -8,9 +8,11 @@
     }
 }
 
-@media screen and (min-width: map-get($responsive-table, -md)) {
+@media screen and (min-width: map-get($responsive-table, -lg)) {
     .l-wrap {
         max-width: 1140px;
         margin: 0 auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }

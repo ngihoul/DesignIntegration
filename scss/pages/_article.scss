@@ -9,7 +9,11 @@
 }
 
 .author-social {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 0;
+    
+    a {
+        padding-right: 1.5rem;
+    }
 }
 
 h2 {
@@ -24,11 +28,16 @@ h2 {
 @media screen and (min-width: map-get($responsive-table, -md)) {
     .article-release-wrap {
         padding-right: 1rem;
-        padding-left: 1rem;
 
         h2 {
             padding-top: 0;
         }
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .article-release-wrap {
+        padding-right: 2rem;
     }
 }
 
@@ -38,7 +47,7 @@ h2 {
     padding: 1.5rem 0;
 
     img {
-        max-width: 45%;
+        max-width: 48%;
     }
 }
 
@@ -46,7 +55,6 @@ h2 {
 .article-others-wrap {
     border-top: 2px solid #f1f0ee;
     padding: 3rem 0;
-    margin: 0 1rem;
 }
 
 .article-previous {
@@ -96,7 +104,7 @@ h2 {
     .article-others-wrap {
         display: flex;
         justify-content: space-between;
-        margin-left: 1rem;
+        margin-right: 1rem;
 
         .article-previous, .article-next {
             @include custom-grid(6);
@@ -113,9 +121,24 @@ h2 {
     }
 }
 
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .article-others-wrap {
+        margin-right: 2rem;
+    }
+
+    .article-next a:hover, .article-previous a:hover {
+        > .article-next-text h2, .article-previous-text h2 {
+            color:$color-primary;
+        }
+
+        > .article-next-text p, .article-previous-text p {
+            color: #222;
+        }
+    }
+}
+
 /* Article comments */
 .article-old-comments-wrap {
-    margin: 0 1rem;
     padding: 3rem 1rem;
     border: 2px solid #f1f0ee;
 }
@@ -161,9 +184,21 @@ h2 {
     }
 }
 
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .article-old-comments-wrap {
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .article-old-comments-wrap {
+        margin-right: 2rem;
+    }
+}
+
 /*Article comments form */
 .article-new-comments-wrap {
-    margin: 3rem 1rem;
+    margin: 3rem 0;
     padding: 3rem 1rem;
     border: 2px solid #f1f0ee;
     text-align: center;
@@ -189,12 +224,39 @@ h2 {
     background: $color-primary;
 }
 
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .article-new-comments-wrap {
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .article-new-comments-wrap {
+        margin-right: 2rem;
+    }
+}
 
 // A revoir !
 @media screen and (min-width: map-get($responsive-table, -md)) {
     .comment-form-field {
         input {
             padding: 1rem;
-        }   
+        }
+        
+        &.name, &.email {
+            display: flex;
+            input {
+                width: 98%;
+            }
+        }
+
+        &.email {
+            justify-content: flex-end;
+        }
+
+        &.name {
+            justify-content: flex-start;
+        }
     }
 }
