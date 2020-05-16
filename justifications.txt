@@ -16,3 +16,6 @@ Responsive
 Design
 	- Tablette
 		* 2 éléments par ligne sauf pour les posts blog
+
+Liens
+	- J'ai choisi de mettre un lien sur certains blocs (plusieurs éléments) pour faciliter le clic.

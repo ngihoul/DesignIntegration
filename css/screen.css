@@ -1521,7 +1521,9 @@ h2 {
   padding-bottom: 0; }
 
 .contact-googlemap iframe {
-  width: 100%; }
+  width: 100%;
+  min-height: 450px;
+  border: none; }
 
 .contact-details-item {
   display: flex;
