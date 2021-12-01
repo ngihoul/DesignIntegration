@@ -5,14 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
         <!--
-        Balises meta Open Graph pour Facebook et Twitter Cards pour améliorer l'affichage des partages sur les réseaux sociaux.
+        Open Graph meta tags for Facebook and Twitter Cards to improve the display of shares on social networks.
         https://developers.facebook.com/docs/sharing/webmasters?locale=fr_FR#markup
         https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards
         -->
-        <script src="https://kit.fontawesome.com/dd6e6a21ba.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+        <link rel="stylesheet" href="./fontawesome/css/all.min.css" type="text/css" />
         <link rel="stylesheet" href="./css/screen.css" type="text/css" media="screen" />
-        <title>ISLweb - Nicolas Gihoul - Examen Mai 2020</title>
-        <meta name="description" content="Travail de fin d'année 2020 par Nicolas Gihoul pour le cours de création de sites statiques donné par Ludovic Evrard."/>
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+        <title>ISLweb - Discover my awesome design projects. I used to work in 2D & 3D design ...</title>
+        <!-- Title to refine with SEO Manager/client -->
+        <meta name="description" content="My awesome projects. I love create 2D and 3 D design on different supports as Vynil, etc."/>
     </head>
     <body>
         <header class="l-header">
@@ -20,10 +23,8 @@
                 <div class="l-header-logo">
                     <a href="index.html"><img src="./img/logo-islweb.png" alt="ISL Web"/></a>
                 </div>
-                <div id="menuHam" class="l-header-hamburger">
-                    <span class="burger">
-
-                    </span>
+                <div role="button" aria-label="Open & close sliding menu" id="menuHam" class="l-header-hamburger">
+                    <span class="burger"><!-- Menu Hamburger in CSS--></span>
                 </div>
                 <nav id="menuMain" class="l-header-nav">
                     <ul>
@@ -36,7 +37,7 @@
                 </nav>
             </div>
         </header>
-        <main id="mainNavOpen" class="l-main">
+        <main class="l-main">
             <div class="m-page-heading">
                 <div class="l-wrap m-page-heading-wrap">
                     <h1>Portfolio</h1>
@@ -49,14 +50,14 @@
             <section class="portfolio-projects m-projects">
                 <div class="l-wrap portfolio-projects-wrap">
                     <div class="row">
-                        <div class="col-12 col-md-12 col-lg-12">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="m-section-heading">
                                 <h3>Our latest features projects</h3>
                                 <p>Who are in extremely love with eco friendly system.</p>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="m-projects-presentation">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <article class="m-projects-presentation">
                                 <a href="portfolio.html">
                                     <div class="m-projects-thumbnails">
                                         <img src="img/portfolio/flowers-cone.jpg" loading="lazy" alt="Flowers cone project" title="Design 2D vynil flowers cone" />
@@ -64,10 +65,10 @@
                                     <h4>2D Vinyl design</h4>
                                     <p>vector</p>
                                 </a>
-                            </div>
+                            </article>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="m-projects-presentation">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <article class="m-projects-presentation">
                                 <a href="portfolio.html">
                                     <div class="m-projects-thumbnails">
                                         <img src="img/portfolio/flowers-crown.jpg" loading="lazy" alt="Flowers crown project" title="Design 2D vynil flowers crown" />
@@ -75,10 +76,10 @@
                                     <h4>2D Vinyl design</h4>
                                     <p>vector</p>
                                 </a>
-                            </div>
+                            </article>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="m-projects-presentation">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <article class="m-projects-presentation">
                                 <a href="portfolio.html">
                                     <div class="m-projects-thumbnails">
                                         <img src="img/portfolio/coloured-lollipops.jpg" loading="lazy" alt="Coloured lollipops project" title="Poster design coloured lollipops" />
@@ -86,10 +87,10 @@
                                     <h4>Creative poster design</h4>
                                     <p>Agency</p>
                                 </a>
-                            </div>
+                            </article>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="m-projects-presentation">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <article class="m-projects-presentation">
                                 <a href="portfolio.html">
                                     <div class="m-projects-thumbnails">
                                         <img src="img/portfolio/dalmatian-bandit.jpg" loading="lazy" alt="Dalmatian bandit project" title="Embossed logo design dalmatian bandit" />
@@ -97,10 +98,10 @@
                                     <h4>Embossed logo design</h4>
                                     <p>Portal</p>
                                 </a>
-                            </div>
+                            </article>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="m-projects-presentation">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <article class="m-projects-presentation">
                                 <a href="portfolio.html">
                                     <div class="m-projects-thumbnails">
                                         <img src="img/portfolio/flowered-plate.jpg" loading="lazy" alt="3D Helmet Design Assiette de fleurs" title="Design helmet 3d flowered plate" />
@@ -108,10 +109,10 @@
                                     <h4>3D Helmet design</h4>
                                     <p>vector</p>
                                 </a>
-                            </div>
+                            </article>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="m-projects-presentation">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <article class="m-projects-presentation">
                                 <a href="portfolio.html">
                                     <div class="m-projects-thumbnails">
                                         <img src="img/portfolio/egg-tree.jpg" loading="lazy" alt="Egg tree project" title="Vynil design 2d egg tree" />
@@ -119,56 +120,48 @@
                                     <h4>2D Vinyl design</h4>
                                     <p>raster</p>
                                 </a>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer id="footerNavOpen" class="l-footer">
+        <footer class="l-footer">
             <div class="l-wrap l-footer-wrap">
                 <div class="row">
-                    <div class="col-12 col-md-4 col-lg-4">
-                        <div class="l-footer-about">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <section class="l-footer-about">
                             <h3>About me</h3>
                             <p> We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.</p>
                             <p>Copyright © 2020 All rights reserved | This template is made with <i class="far fa-heart"></i> by <a href="http://www.colorlib.com"> Colorlib</a></p>
-                        </div>
+                        </section>
                     </div>
-                    <div class="col-12 col-md-5 col-lg-5">
-                        <div class="l-footer-newsletter">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                        <section class="l-footer-newsletter">
                             <h3>Newsletter</h3>
                             <p>Stay updated with our latest trends</p>
                             <form class="newsletter-form" action="traitement-newsletter.php" method="post">
-                                    <label for="mail">Mail</label>
-                                    <input type="email" name="mail" id="mail" placeholder="Enter Email Adress">
-                                    <input type="submit" value="&rightarrow;">
+                                <label for="mail">Mail</label>
+                                <input type="email" name="mail" id="mail" placeholder="Enter Email Address">
+                                <input aria-label="Subscribe to the newsletter" type="submit" value="&rightarrow;">
                             </form>
-                        </div>
+                        </section>
                     </div>
-                    <div class="col-12 col-md-3 col-lg-3">
-                        <div class="l-footer-social">
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                        <section class="l-footer-social">
                             <h3>Follow Me</h3>
                             <p>Let us be social</p>
                             <div class="l-footer-social-logos">
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-dribbble"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-behance"></i>
-                                </a>
+                                <a aria-label="Facebook page of ISL Web" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a aria-label="Twitter page of ISL Web" href="#"><i class="fab fa-twitter"></i> </a>
+                                <a aria-label="Dribbble page of ISL Web" href="#"><i class="fab fa-dribbble"></i></a>
+                                <a aria-label="Behance page of ISL Web" href="#"><i class="fab fa-behance"></i></a>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>
         </footer>
-        <script src="js/menu.js"></script>
+        <script src="js/menu.min.js"></script>
     </body>
 </html>

@@ -9,13 +9,18 @@ Optimisation
 
 Responsive
 	- Breakpoints
-		* smartphone < 860px
-		* tablette > 860px & < 1140px
-		* pc > 1140px
+		* smartphone (-xs) < 568px
+		* smartphone paysage (-sm) de 568px à 859px
+			> Version intermédiaire personnelle car je trouvais les design smartphones et tablettes inadaptés (aside trop compressé).
+			> Page Blog & Article non optimisées pour cette taille > Design smartphone conservé jusqu'à 860px.
+		* tablette (-md) de 860px à 1140px
+		* pc (-lg) > 1140px
 
 Design
-	- Tablette
-		* 2 éléments par ligne sauf pour les posts blog
+	- Couleur du texte
+		* 5% plus foncé que demandé pour améliorer l'accessibilité (ratio du contraste plus élevé : AA via outil accessibilité de Firefox).
+		* 5% plus clair pour le footer avec la même justification.
 
 Liens
 	- J'ai choisi de mettre un lien sur certains blocs (plusieurs éléments) pour faciliter le clic.
+	- ":hover" uniquement sur la version PC.

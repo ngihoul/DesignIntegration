@@ -4,7 +4,7 @@
   "description": "Examen création de sites statiques 2020",
   "main": "index.js",
   "scripts": {
-    "node-sass": "node-sass scss/screen.scss css/screen.css -w",
+    "node-sass": "node-sass scss/screen.scss css/screen.css -w --output-style compressed",
     "prefix": "postcss css/screen.css --use autoprefixer -d css/"
   },
   "author": "Nicolas Gihoul",

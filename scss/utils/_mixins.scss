@@ -10,16 +10,17 @@
     max-width: 100%;
 }
 
+// Gradient background
 @mixin bg-gradient {
-    background: $color-primary; // Si le dégradé n'est pas pris en compte par le navigateur.
+    background: $color-primary; // If the gradient doesn't work on the browser.
     background: linear-gradient(90deg, $color-primary 40%, $color-secondary 100%);
 }
 
-/* Blog icons */
+// Blog icons
 @mixin custom-icon($ref) {
+    content: $ref;
     font-family: "Font Awesome 5 Free", "Poppins";
     font-weight: 300;
-    content: $ref;
 }
 
 @mixin custom-border($type) {

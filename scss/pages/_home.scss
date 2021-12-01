@@ -1,4 +1,5 @@
-/* Background sections */
+// Home
+// ** Backgrounds colors
 .home-slider, .home-services, .home-blog {
     background-color: $color-bg-secondary;
 }
@@ -11,7 +12,7 @@
     @include bg-gradient;
 }
 
-/* Home slider */
+// ** Slider
 .home-slider-wrap {
     padding-top: 8rem;
     padding-bottom: 0;
@@ -31,6 +32,20 @@
     text-transform: uppercase;
     padding-bottom: 0;
     font-weight: bold;
+}
+
+@media screen and (min-width: map-get($responsive-table, -sm)) {
+    .home-slider-wrap {
+        padding-top: 6rem;
+
+        img {
+            padding-top: 0;
+        }
+    }
+
+    .home-slider-this-is-me {
+        padding-top: 2.5rem;
+    }
 }
 
 @media screen and (min-width: map-get($responsive-table, -md)) {
@@ -53,7 +68,7 @@
     }
 }
 
-/* Home My Offered Services */
+// ** Services
 .home-services-wrap {
     padding-bottom: 3.5rem;
 }
@@ -78,45 +93,37 @@
     }
 }
 
-@media screen and (min-width: map-get($responsive-table, -md)) {
+@media screen and (min-width: map-get($responsive-table, -sm)) {
     .home-services {
-        // Utilisation des class de la grille pour éviter d'utiliser les class "webdesign", "webdev", etc. > Maintenabilité accrue.
-        .col-md-6:nth-child(even) {
-            padding-right: 1.5rem;
+        // Using the grid classes to use the :nth-child selector > Enhanced Maintainability.
+        .col-sm-6:nth-child(odd) {
+            padding-left: 0.5rem;
         }
 
-        .col-md-6:nth-child(odd) {
+        .col-sm-6:nth-child(even) {
+            padding-right: 0.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .home-services {
+        // Using the grid classes to use the :nth-child selector > Enhanced Maintainability.
+        .col-md-4:nth-child(3n+2) {
+            padding-right: 1.5rem;
+        }
+    
+        .col-md-4:nth-child(3n+3) {
+            padding: 0 0.75rem;
+        }
+
+        .col-md-4:nth-child(3n+4) {
             padding-left: 1.5rem;
         }
     }
 }
 
-@media screen and (min-width: map-get($responsive-table, -lg)) {
-    .home-services {
-        // Utilisation des class de la grille pour éviter d'utiliser les class "webdesign", "webdev", etc. > Maintenabilité accrue.
-        .col-md-6:nth-child(even) {
-            padding-right: 0;
-        }
-
-        .col-md-6:nth-child(odd) {
-            padding-left: 0;
-        }
-
-        .col-md-6:nth-child(3n+2) {
-            padding-right: 1.5rem;
-        }
-    
-        .col-md-6:nth-child(3n+3) {
-            padding: 0 0.75rem;
-        }
-
-        .col-md-6:nth-child(3n+4) {
-            padding-left: 1.5rem;
-        }
-    }    
-}
-
-/* Home Counters */
+// ** Counters
 .home-counters-wrap {
     padding: 5rem 0;
     text-align: center;
@@ -142,16 +149,16 @@
 
 @media screen and (min-width: map-get($responsive-table, -md)) {
     .home-counters-wrap {
-        padding: 5rem 8rem;;
+        padding: 5rem 2rem;
     }
 }
 
-/* Home Latest projects */
+// ** Projects wrap
 .home-projects-wrap {
     padding-bottom: 3.5rem;
 }
 
-/* Home latest blogs posts */
+// ** Latest blog posts
 .home-blog-wrap {
     padding-bottom: 2rem;
 }
@@ -169,9 +176,7 @@
 .home-blog-post-details {
     display: flex;
     align-items: center;
-
     padding: 0.5rem 0;
-
     border-bottom: 1px solid lighten($color-txt, 40%);
 
     .post-author {
@@ -196,21 +201,50 @@
     }    
 }
 
+@media screen and (min-width: map-get($responsive-table, -sm)) {
+    .home-blog {
+        // Using the grid classes to use the :nth-child selector > Enhanced Maintainability.
+        .col-sm-6:nth-child(odd) {
+            padding-left: 0.5rem;
+        }
+
+        .col-sm-6:nth-child(even) {
+            padding-right: 0.5rem;
+        }
+
+        .col-sm-6:last-child {
+            display: none;
+        }
+    }
+}
+
 @media screen and (min-width: map-get($responsive-table, -md)) {
     .home-blog {
-        // Utilisation des classes de la grille pour améliorer la maintenabilité du code. Si ajout de posts sur la page home, les padding s'adaptent automatiquement peu importe le nombre.
+        // Use of grid classes to improve code maintainability. If posts are added to the home page, the padding automatically adapts regardless of the number.
+        .col-sm-6:nth-child(odd) {
+            padding-left: 0;
+        }
+
+        .col-sm-6:nth-child(even) {
+            padding-right: 0;
+        }
+
+        .col-sm-6:last-child {
+            display: block;
+        }
+
         .col-md-4 {
             &:nth-child(3n+2) {
-                padding-right: 1.2rem;
+                padding-right: 1.25rem;
             }
 
             &:nth-child(3n+3) {
-                padding-right: 0.6rem;
-                padding-left: 0.6rem;
+                padding-right: 0.75rem;
+                padding-left: 0.75rem;
             }
 
             &:nth-child(3n+4){
-                padding-left: 1.2rem;
+                padding-left: 1.25rem;
             }
         }
     }
@@ -219,10 +253,8 @@
         padding-top: 0;
     }
 
-    .home-blog-post-details {
-        p {
-            font-size: 0.9rem;
-        }
+    .home-blog-post-details p {
+        font-size: 0.9rem;
     }
 
     .blog-post-date {
@@ -234,7 +266,7 @@
     }
 }
 
-// Pour éviter que la date, les likes et les commentaires ne soient renvoyés à la ligne :
+// ** ** To prevent the date, likes and comments from being returned to the line :
 @media screen and (min-width: 800px){
     .blog-post-date p {
         font-size: 0.8rem;
@@ -244,11 +276,10 @@
 @media screen and (min-width: 850px){
     .blog-post-date p {
         font-size: 0.9rem;
-    }
-            
+    }   
 }
 
-// Effet de zoom sur photos articles
+// ** ** Zoom effect on article photos
 @media screen and (min-width: map-get($responsive-table, -lg)) {
     .home-blogs-post-thumbnail {
         overflow: hidden;
@@ -270,6 +301,4 @@
             transition: color 0.5s;
         }
     }
-    
-    
 }

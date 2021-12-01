@@ -5,14 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
         <!--
-        Balises meta Open Graph pour Facebook et Twitter Cards pour améliorer l'affichage des partages sur les réseaux sociaux.
+        Open Graph meta tags for Facebook and Twitter Cards to improve the display of shares on social networks.
         https://developers.facebook.com/docs/sharing/webmasters?locale=fr_FR#markup
         https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards
         -->
-        <script src="https://kit.fontawesome.com/dd6e6a21ba.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+        <link rel="stylesheet" href="./fontawesome/css/all.min.css" type="text/css" />
         <link rel="stylesheet" href="./css/screen.css" type="text/css" media="screen" />
-        <title>ISLweb - Nicolas Gihoul - Examen Mai 2020</title>
-        <meta name="description" content="Travail de fin d'année 2020 par Nicolas Gihoul pour le cours de création de sites statiques donné par Ludovic Evrard."/>
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+        <title>ISLweb - Astronomy Binoculars A Great Alternative</title>
+        <meta name="description" content="MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction."/>
     </head>
     <body>
         <header class="l-header">
@@ -20,10 +22,8 @@
                 <div class="l-header-logo">
                     <a href="index.html"><img src="./img/logo-islweb.png" alt="ISL Web"/></a>
                 </div>
-                <div id="menuHam" class="l-header-hamburger">
-                    <span class="burger">
-
-                    </span>
+                <div role="button" aria-label="Open & close sliding menu" id="menuHam" class="l-header-hamburger">
+                    <span class="burger"><!-- Menu Hamburger in CSS--></span>
                 </div>
                 <nav id="menuMain" class="l-header-nav">
                     <ul>
@@ -36,7 +36,7 @@
                 </nav>
             </div>
         </header>
-        <main id="mainNavOpen" class="l-main">
+        <main class="l-main">
             <div class="m-page-heading">
                 <div class="l-wrap m-page-heading-wrap">
                     <h1>Blog details page</h1>
@@ -47,10 +47,10 @@
                     </div>
                 </div>
             </div>
-                <div class="article">
-                    <div class="l-wrap article-wrap">
-                        <div class="row">
-                        <div class="col-12 col-md-8 col-lg-8">
+            <div class="article">
+                <div class="l-wrap article-wrap">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-8">
                             <article class="article-release">
                                 <div class="article-release-wrap">
                                     <img 
@@ -63,78 +63,71 @@
                                         alt="Blonde riding a horse in the mountains"
                                         title="Astronomy Binoculars A Great Alternative" 
                                     />
-                                <div class="row">
-                                    <div class="col-12 col-md-3 col-lg-3">
-                                        <div class="blog-article-infos">
-                                            <p class="blog-article-categories">Food, technology, Politics, Lifestyle</p>
-                                            <div class="row">
-                                                <div class="col-6 col-md-12 col-lg-12">
-                                                    <p class="blog-article-author icon">Mark wiens</p>
-                                                </div>
-                                                <div class="col-6 col-md-12 col-lg-12">
-                                                    <p class="blog-article-date icon">12 Dec, 2017</p>
-                                                </div>
-                                                <div class="col-6 col-md-12 col-lg-12">
-                                                    <p class="blog-article-views icon">1.2M Views</p>
-                                                </div>
-                                                <div class="col-6 col-md-12 col-lg-12">
-                                                    <p class="blog-article-comments icon">06 Comments</p>
-                                                </div>
-                                                <div class="col-12 col-md-12 col-lg-12">
-                                                    <div class="author-social">
-                                                        <a href="#">
-                                                            <i class="fab fa-facebook-f"></i>
-                                                        </a>
-                                                        <a href="#">
-                                                            <i class="fab fa-twitter"></i>
-                                                        </a>
-                                                        <a href="#">
-                                                            <i class="fab fa-dribbble"></i>
-                                                        </a>
-                                                        <a href="#">
-                                                            <i class="fab fa-behance"></i>
-                                                        </a>
+                                
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                                            <div class="blog-article-infos">
+                                                <p class="blog-article-categories">Food, technology, Politics, Lifestyle</p>
+                                                <div class="row">
+                                                    <div class="col-6 col-sm-6 col-md-12 col-lg-12">
+                                                        <p class="blog-article-author icon">Mark wiens</p>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-12 col-lg-12">
+                                                        <p class="blog-article-date icon">12 Dec, 2017</p>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-12 col-lg-12">
+                                                        <p class="blog-article-views icon">1.2M Views</p>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-12 col-lg-122">
+                                                        <p class="blog-article-comments icon">06 Comments</p>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-12 col-lg-12">
+                                                        <div class="author-social">
+                                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                                                            <a href="#"><i class="fab fa-behance"></i></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-12 col-sm-12 col-md-9 col-lg-9">
+                                            <h2>Astronomy Binoculars A Great Alternative</h2>
+                                            <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
+                                            <p>Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed</p>
+                                            <p>Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed</p>
+                                        </div>
                                     </div>
-                                    <div class="col-12 col-md-9 col-lg-9">
-                                        <h2>Astronomy Binoculars A Great Alternative</h2>
-                                        <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
-                                        <p>Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed</p>
-                                        <p>Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed</p>
+                                    <p class="article-emphasis">MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.</p>
+                                    <div class="article-img-wrap">
+                                        <img 
+                                            class="article-img-mini" 
+                                            src="./img/blog/bunches-flowers.jpg" 
+                                            srcset="./img/blog/bunches-flowers-small.jpg 150w, 
+                                                    ./img/blog/bunches-flowers-medium.jpg 270w, 
+                                                    ./img/blog/bunches-flowers.jpg 360w" 
+                                            sizes="(max-width: 859px) 50vw, 
+                                                    30vw" 
+                                            loading="lazy" 
+                                            alt="Bunches of flowers" 
+                                            title="Astronomy Binoculars A Great Alternative Illustration" 
+                                        />
+                                        <img 
+                                            class="article-img-mini" 
+                                            src="./img/blog/happy-meeting.jpg" 
+                                            srcset="./img/blog/happy-meeting-small.jpg 150w, 
+                                                    ./img/blog/happy-meeting-medium.jpg 270w, 
+                                                    ./img/blog/happy-meeting.jpg 360w" 
+                                            sizes="(max-width: 859px) 50vw, 
+                                                    30vw" 
+                                            loading="lazy" 
+                                            alt="Happy meeting" 
+                                            title="Astronomy Binoculars A Great Alternative Illustration" 
+                                        />
                                     </div>
-                                </div>
-                                <p class="article-emphasis">MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.</p>
-                                <div class="article-img-wrap">
-                                    <img 
-                                        class="article-img-mini" 
-                                        src="./img/blog/bunches-flowers.jpg" 
-                                        srcset="./img/blog/bunches-flowers-small.jpg 150w, 
-                                                ./img/blog/bunches-flowers-medium.jpg 270w, 
-                                                ./img/blog/bunches-flowers.jpg 360w" 
-                                        sizes="(max-width: 859px) 50vw, 
-                                                30vw" 
-                                        loading="lazy" 
-                                        alt="Bunches of flowers" 
-                                        title="Astronomy Binoculars A Great Alternative Illustration" 
-                                    />
-                                    <img 
-                                        class="article-img-mini" 
-                                        src="./img/blog/happy-meeting.jpg" 
-                                        srcset="./img/blog/happy-meeting-small.jpg 150w, 
-                                                ./img/blog/happy-meeting-medium.jpg 270w, 
-                                                ./img/blog/happy-meeting.jpg 360w" 
-                                        sizes="(max-width: 859px) 50vw, 
-                                                30vw" 
-                                        loading="lazy" 
-                                        alt="Happy meeting" 
-                                        title="Astronomy Binoculars A Great Alternative Illustration" 
-                                    />
-                                </div>
-                                <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower.</p>
-                                <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower.</p>
+                                    <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower.</p>
+                                    <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower.</p>
                                 </div>
                             </article>
                             <div class="article-others">
@@ -166,17 +159,17 @@
                                             <h3>05 comments</h3>
                                             <div class="article-comment-detail">
                                                 <div class="row">
-                                                    <div class="col-2 col-md-1 col-lg-1">
+                                                    <div class="col-2 col-sm-1 col-md-1 col-lg-1">
                                                         <div class="comment-image">
                                                             <img src="./img/blog/emily-blunt.jpg" alt="Emily Blunt" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-7 col-md-8 col-lg-8">
+                                                    <div class="col-7 col-sm-8 col-md-8 col-lg-8">
                                                         <p class="comment-author">Emily Blunt</p>
                                                         <p class="comment-date"><time datetime="2017-12-04">December 4, 2017 at 3:12 pm</time></p> 
                                                         <p class="comment-text">Never say goodbye till the end comes !</p>
                                                     </div>
-                                                    <div class="col-3 col-md-3 col-lg-3">
+                                                    <div class="col-3 col-sm-3 col-md-3 col-lg-3">
                                                         <div class="btn-reply">
                                                             <a href="#">Reply</a>
                                                         </div>
@@ -185,20 +178,20 @@
                                             </div>
                                             <div class="article-comment-detail reply">
                                                 <div class="row">
-                                                    <div class="col-1">
+                                                    <div class="col-1 col-sm-1 col-md-1 col-lg-1">
 
                                                     </div>
-                                                    <div class="col-2 col-md-1 col-lg-1">
+                                                    <div class="col-2 col-sm-1 col-md-1 col-lg-1">
                                                         <div class="comment-image">
                                                             <img src="./img/blog/elsie-cunningham.jpg" alt="Elsie Cunningham" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-6 col-md-7 col-lg-7">
+                                                    <div class="col-6 col-sm-7 col-md-7 col-lg-7">
                                                         <p class="comment-author">Elsie Cunningham</p>
                                                         <p class="comment-date"><time datetime="2017-12-04">December 4, 2017 at 3:12 pm</time></p> 
                                                         <p class="comment-text">Never say goodbye till the end comes !</p>
                                                     </div>
-                                                    <div class="col-3 col-md-3 col-lg-3">
+                                                    <div class="col-3 col-sm-3 col-md-3 col-lg-3">
                                                         <div class="btn-reply">
                                                             <a href="#">Reply</a>
                                                         </div>
@@ -208,20 +201,20 @@
                                             <div class="article-comment-detail reply">
                                                 <div class="article-comment-author">
                                                     <div class="row">
-                                                        <div class="col-1">
+                                                        <div class="col-1 col-sm-1 col-md-1 col-lg-1">
                                                         
                                                         </div>
-                                                        <div class="col-2 col-md-1 col-lg-1">
+                                                        <div class="col-2 col-sm-1 col-md-1 col-lg-1">
                                                             <div class="comment-image">
                                                                 <img src="./img/blog/annie-stephens.jpg" alt="Annie Stephens" />
                                                             </div>
                                                         </div>
-                                                        <div class="col-6 col-md-7 col-lg-7">
+                                                        <div class="col-6 col-sm-7 col-md-7 col-lg-7">
                                                             <p class="comment-author">Annie Stephens</p>
                                                             <p class="comment-date"><time datetime="2017-12-04">December 4, 2017 at 3:12 pm</time></p> 
                                                             <p class="comment-text">Never say goodbye till the end comes !</p>
                                                         </div>
-                                                        <div class="col-3 col-md-3 col-lg-3">
+                                                        <div class="col-3 col-sm-3 col-md-3 col-lg-3">
                                                             <div class="btn-reply">
                                                                 <a href="#">Reply</a>
                                                             </div>
@@ -231,17 +224,17 @@
                                             </div>
                                             <div class="article-comment-detail">
                                                 <div class="row">
-                                                    <div class="col-2 col-md-1 col-lg-1">
+                                                    <div class="col-2 col-sm-1 col-md-1 col-lg-1">
                                                         <div class="comment-image">
                                                             <img src="./img/blog/maria-luna.jpg" alt="Maria Luna" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-7 col-md-8 col-lg-8">
+                                                    <div class="col-7 col-sm-8 col-md-8 col-lg-8">
                                                         <p class="comment-author">Maria Luna</p>
                                                         <p class="comment-date"><time datetime="2017-12-04">December 4, 2017 at 3:12 pm</time></p> 
                                                         <p class="comment-text">Never say goodbye till the end comes !</p>
                                                     </div>
-                                                    <div class="col-3 col-md-3 col-lg-3">
+                                                    <div class="col-3 col-sm-3 col-md-3 col-lg-3">
                                                         <div class="btn-reply">
                                                             <a href="#">Reply</a>
                                                         </div>
@@ -250,17 +243,17 @@
                                             </div>
                                             <div class="article-comment-detail">
                                                 <div class="row">
-                                                    <div class="col-2 col-md-1 col-lg-1">
+                                                    <div class="col-2 col-sm-1 col-md-1 col-lg-1">
                                                         <div class="comment-image">
                                                             <img src="./img/blog/ina-hayes.jpg" alt="Ina Hayes" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-7 col-md-8 col-lg-8">
+                                                    <div class="col-7 col-sm-8 col-md-8 col-lg-8">
                                                         <p class="comment-author">Ina Haye</p>
                                                         <p class="comment-date"><time datetime="2017-12-04">December 4, 2017 at 3:12 pm</time></p> 
                                                         <p class="comment-text">Never say goodbye till the end comes !</p>
                                                     </div>
-                                                    <div class="col-3 col-md-3 col-lg-3">
+                                                    <div class="col-3 col-sm-3 col-md-3 col-lg-3">
                                                         <div class="btn-reply">
                                                             <a href="#">Reply</a>
                                                         </div>
@@ -274,13 +267,13 @@
                                             <h3>Leave a Comment</h3>
                                             <form action="traitement.php" method="POST">
                                                 <div class="row">
-                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                                                         <div class="comment-form-field name">
                                                             <label for="name">Name :</label>
                                                             <input type="text" id="name" name="name" placeholder="Enter your name" required />
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                                                         <div class="comment-form-field email">
                                                             <label for="email">Email :</label>
                                                             <input type="email" id="email" name="email" placeholder="Enter your email" required />
@@ -303,14 +296,14 @@
                                 </div>
                             </section>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-4">
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                             <aside class="m-aside-blog">
                                 <div class="l-wrap m-aside-blog-wrap">
                                     <div class="m-aside-blog-search">
                                         <form class="search-box" action="traitement.php" method="POST">
                                             <label for="search">Search :</label>
                                             <input type="text" name="search" id="search" placeholder="Search posts">
-                                            <input class="fas fa-search icon" type="submit" value="&#xf002;">
+                                            <button aria-label="Search posts"><i class="fa fa-search"></i></button>
                                         </form>
                                     </div>
                                     <section class="m-aside-blog-author">
@@ -325,51 +318,43 @@
                                         <h4 class="author-name"><a href="#">Charlie Barber</a></h4>
                                         <p class="author-role">Senior blog writer</p>
                                         <div class="author-social">
-                                            <a href="#">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="fab fa-dribbble"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="fab fa-behance"></i>
-                                            </a>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                                            <a href="#"><i class="fab fa-behance"></i></a>
                                         </div>
                                         <p class="author-description">Boot camps have its supporters andit sdetractors. Some people do not understand why you should have to spend money on boot camp when you can get. Boot camps have itssuppor ters andits detractors.</p>
                                     </section>
                                     <section class="m-aside-blog-popular">
                                         <h3 class="aside-heading">Popular Posts</h3>
-                                        <div class="popular-post">
+                                        <article class="popular-post">
                                             <img src="img/blog/space-the-final-frontier.jpg" alt="Coloured sports gear" title="Space the final frontier" />
                                             <div class="popular-post-title">
                                                 <h4><a href="#">Space the final frontier</a></h4>
                                                 <p>02 Hours ago</p>
                                             </div>
-                                        </div>
-                                        <div class="popular-post">
+                                        </article>
+                                        <article class="popular-post">
                                             <img src="img/blog/the-amazin-hubble.jpg" alt="Camera puking paint" title="The amazing hubble" />
                                             <div class="popular-post-title">
                                                 <h4><a href="#">The amazing hubble</a></h4>
                                                 <p>05 Hours ago</p>
                                             </div>
-                                        </div>
-                                        <div class="popular-post">
+                                        </article>
+                                        <article class="popular-post">
                                             <img src="img/blog/astronomy-or-astrology.jpg" alt="Four lollipops" title="Astronomy or astrology" />
                                             <div class="popular-post-title">
                                                 <h4><a href="#">Astronomy or astrology</a></h4>
                                                 <p>12 Hours ago</p>
                                             </div>
-                                        </div>
-                                        <div class="popular-post">
+                                        </article>
+                                        <article class="popular-post">
                                             <img src="img/blog/asteroid-telescope.jpg" alt="Work stuffs" title="Asteroids telescope" />
                                             <div class="popular-post-title">
                                                 <h4><a href="#">Asteroids telescope</a></h4>
                                                 <p>18 Hours ago</p>
                                             </div>
-                                        </div>
+                                        </article>
                                     </section>
                                     <section class="m-aside-blog-ads">
                                         <h4>Your ad here !</h4>
@@ -425,7 +410,7 @@
                                         <p>Here, I focus on a range of items and features that we use in life without giving them a second thought.</p>
                                         <form class="aside-newsletter-form" action="traitement-newsletter.php" method="post">
                                             <label for="aside-mail">Mail</label>
-                                            <input class="far fa-envelope icon" type="email" name="aside-mail" id="aside-mail" placeholder="&#xf0e0; Enter  Email Adress">
+                                            <input class="far fa-envelope icon" type="email" name="aside-mail" id="aside-mail" placeholder="&#xf0e0; Enter Email Adress">
                                             <input type="submit" value="Subscribe">
                                         </form>
                                         <p>You can unsubscribe at any time </p>
@@ -447,55 +432,46 @@
                                 </div>
                             </aside>
                         </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer id="footerNavOpen" class="l-footer">
+        <footer class="l-footer">
             <div class="l-wrap l-footer-wrap">
                 <div class="row">
-                    <div class="col-12 col-md-4 col-lg-4">
-                        <div class="l-footer-about">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <section class="l-footer-about">
                             <h3>About me</h3>
                             <p> We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.</p>
                             <p>Copyright © 2020 All rights reserved | This template is made with <i class="far fa-heart"></i> by <a href="http://www.colorlib.com"> Colorlib</a></p>
-                        </div>
+                        </section>
                     </div>
-                    <div class="col-12 col-md-5 col-lg-5">
-                        <div class="l-footer-newsletter">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                        <section class="l-footer-newsletter">
                             <h3>Newsletter</h3>
                             <p>Stay updated with our latest trends</p>
                             <form class="newsletter-form" action="traitement-newsletter.php" method="post">
-                                    <label for="mail">Mail</label>
-                                    <input type="email" name="mail" id="mail" placeholder="Enter Email Adress">
-                                    <input type="submit" value="&rightarrow;">
+                                <label for="mail">Mail</label>
+                                <input type="email" name="mail" id="mail" placeholder="Enter Email Address">
+                                <input aria-label="Subscribe to the newsletter" type="submit" value="&rightarrow;">
                             </form>
-                        </div>
+                        </section>
                     </div>
-                    <div class="col-12 col-md-3 col-lg-3">
-                        <div class="l-footer-social">
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                        <section class="l-footer-social">
                             <h3>Follow Me</h3>
                             <p>Let us be social</p>
                             <div class="l-footer-social-logos">
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-dribbble"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-behance"></i>
-                                </a>
+                                <a aria-label="Facebook page of ISL Web" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a aria-label="Twitter page of ISL Web" href="#"><i class="fab fa-twitter"></i> </a>
+                                <a aria-label="Dribbble page of ISL Web" href="#"><i class="fab fa-dribbble"></i></a>
+                                <a aria-label="Behance page of ISL Web" href="#"><i class="fab fa-behance"></i></a>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>
         </footer>
-        <script src="js/menu.js"></script>
+        <script src="js/menu.min.js"></script>
     </body>
 </html>

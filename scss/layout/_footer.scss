@@ -1,9 +1,11 @@
+// Footer
 .l-footer {
     background-color: $color-footer-bg;
 }
 
 .l-footer-wrap {
     padding: 5rem 1rem 5rem;
+    
     h3 {
         color: $color-footer-title;
         padding-top: 2rem;
@@ -11,11 +13,12 @@
 
     p {
         padding-top: 1.2rem;
+        color: lighten($color-txt, 10%);
     }
 
-    /* Email field for newsletter */
+// ** Newsletter
     form {
-        display: flex; // pour coller les inputs.
+        display: flex; // To paste the inputs.
         align-items: center;
 
         label {
@@ -37,37 +40,24 @@
             @include custom-grid(2);
             background-color: $color-primary;
             color: $color-bg-primary;
-            cursor: pointer;
-
-            &:hover, &:active {
-                background-color: $color-secondary;
-            }
         }
     }
 }
 
-.l-footer-about {
-    a[href="http://www.colorlib.com"] {
-        color: $color-link;
-      
-      &:hover{
-          color: $color-txt;
-        }
-    }
+// ** Colorlib link
+.l-footer-about a[href="http://www.colorlib.com"] {
+    color: $color-link;
 }
 
+// ** Social media list
 .l-footer-social-logos {
     a {
         color: $color-footer-title;
         padding: 1.5rem 1rem;
-
-        &:hover {
-            color: $color-link;
-        }
     }
 
     i {
-        padding-top: 1.5rem; // Le padding-top sur la balise <a> ne fonctionne pas.
+        padding-top: 1.5rem;
         font-size: 1.5rem;
     }
 }
@@ -98,5 +88,21 @@
 @media screen and (min-width: map-get($responsive-table, -lg)) {
     .l-footer-wrap {
         padding: 5rem 2rem;
+
+        form input[type=submit] {
+            cursor: pointer;
+
+            &:hover, &:active {
+                background-color: $color-secondary;
+            }
+        }
+    }
+
+    .l-footer-about a[href="http://www.colorlib.com"]:hover {
+        color: $color-txt;
+    }
+
+    .l-footer-social-logos a:hover {
+        color: $color-link;
     }
 }

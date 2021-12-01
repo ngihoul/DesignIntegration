@@ -1,3 +1,5 @@
+// Buttons
+// ** Button with linear gradient background
 .btn-primary {
     display: block;
     width: 200px;
@@ -10,12 +12,15 @@
     font-weight: bold;
     letter-spacing: 0.10rem;
     border: none;
+}
 
-    &:hover {
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .btn-primary:hover {
         background: $color-secondary;
     }
 }
 
+// ** Button "read the article"
 .btn-secondary {
     display: inline-block;
     text-align: center;
@@ -25,6 +30,7 @@
     font-weight: bold;
 }
 
+// ** Button in cloud tags
 .btn-tag {
     display: inline-block;
     border: 2px solid #f1f0ee;
@@ -42,6 +48,7 @@
     }
 }
 
+// ** Button Likes, Comments, etc. in Blog & Article
 .icon::after {
     display: inline-block;
     font-style: normal;
@@ -51,6 +58,21 @@
     padding-left: 0.6rem;
 }
 
+// ** Button "Reply" in article comments
+.btn-reply {
+    text-align: center;
+
+    a {
+        padding: 0.5rem 1.2rem;
+        border: 1px solid #f1f0ee;
+        color: $color-title;
+        font-weight: bold;
+        background-color: $color-bg-primary;
+        text-transform: uppercase;
+    }
+}
+
+// Page changer in blog
 .blog-page-changer ul {
     display: flex;
     justify-content: center;
@@ -73,7 +95,7 @@
     }
 }
 
-/* Aside -- Search box */
+// Search box in Aside / Blog & Article
 .search-box {
     display: flex;
     padding-bottom: 3rem;
@@ -82,38 +104,44 @@
         display: none;
     }
 
-    input {
+    input, button {
         background-color: $color-primary;
         border: none;
         color: #fff;
         font-size: 1rem;
-        padding: 1rem 1.5rem;
+        padding: 1rem 1.5rem;    
+    }
 
-        &[type=text] {
-            border-radius: 50px 0 0 50px;
-            @include custom-grid(9);
-            color: #fff;
-            
-            &::placeholder {
-                color: darken(#fff, 5%);
-            }
-
-            &::-ms-input-placeholder { 
-                color: #fff; 
-            }
-        }
-
+    input[type=text] {
+        border-radius: 50px 0 0 50px;
+        @include custom-grid(9);
+        color: #fff;
         
-
-        &[type=submit] {
-            border-radius: 0 50px 50px 0;
-            @include custom-grid(3);
-            cursor: pointer;
+        &::placeholder {
+            color: darken(#fff, 5%);
+            content: "hello world !"
         }
+
+        &::-ms-input-placeholder { 
+            color: #fff; 
+        }
+    }
+
+    button {
+        position: relative;
+        border-radius: 0 50px 50px 0;
+        @include custom-grid(3);
+        margin: 0.75rem 0;
     }
 }
 
-/* Aside heading -- Blog.html & Article.html */
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .search-box button {
+        cursor: pointer;
+    }
+}
+
+// Aside heading in Blog & Article
 .aside-heading {
     background-color: $color-link;
     width: 100%;
@@ -125,7 +153,7 @@
     font-weight: normal;
 }
 
-/* Popular post */
+// Aside popular posts in Blog & Article
 .popular-post {
     display: flex;
     align-items: center;
@@ -141,15 +169,9 @@
     }
 }
 
-@media screen and (min-width: map-get($responsive-table, -lg)) {
-    .popular-post:hover > .popular-post-title a {
-        color: $color-primary;
-    }
-}
-
 .popular-post-title {
     @include custom-grid(8);
-    padding-left: 0.5rem;
+    padding-left: 0.8rem;
 
     h4 {
         font-size: 1rem;
@@ -160,24 +182,8 @@
     }
 }
 
-/* Comment Reply */
-.btn-reply {
-    text-align: center;
-
-    a {
-        padding: 0.5rem 1.2rem;
-        border: 1px solid #f1f0ee;
-        color: $color-title;
-        font-weight: bold;
-        background-color: $color-bg-primary;
-        text-transform: uppercase;
-    }
-}
-
-
-
 @media screen and (min-width: map-get($responsive-table, -lg)) {
-    .author-social a:hover {
+    .popular-post:hover > .popular-post-title a {
         color: $color-primary;
     }
 }

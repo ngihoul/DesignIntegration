@@ -5,25 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
         <!--
-        Balises meta Open Graph pour Facebook et Twitter Cards pour améliorer l'affichage des partages sur les réseaux sociaux.
+        Open Graph meta tags for Facebook and Twitter Cards to improve the display of shares on social networks.
         https://developers.facebook.com/docs/sharing/webmasters?locale=fr_FR#markup
         https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards
         -->
-        <script src="https://kit.fontawesome.com/dd6e6a21ba.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+        <link rel="stylesheet" href="./fontawesome/css/all.min.css" type="text/css" />
         <link rel="stylesheet" href="./css/screen.css" type="text/css" media="screen" />
-        <title>ISLweb - Nicolas Gihoul - Examen Mai 2020</title>
-        <meta name="description" content="Travail de fin d'année 2020 par Nicolas Gihoul pour le cours de création de sites statiques donné par Ludovic Evrard."/>
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+        <title>ISLweb - My blog</title>
+        <meta name="description" content="All my articles about things I love !"/>
+        <!-- Title & meta description to refine with SEO Manager/client -->
     </head>
     <body>
         <header class="l-header">
             <div class="l-header-wrap">
                 <div class="l-header-logo">
-                    <a href="index.html"><img src="./img/logo-islweb.png" alt="ISL Web" /></a>
+                    <a href="index.html"><img src="./img/logo-islweb.png" alt="ISL Web"/></a>
                 </div>
-                <div id="menuHam" class="l-header-hamburger">
-                    <span class="burger">
-
-                    </span>
+                <div role="button" aria-label="Open & close sliding menu"  id="menuHam" class="l-header-hamburger">
+                    <span class="burger"><!-- Menu Hamburger in CSS--></span>
                 </div>
                 <nav id="menuMain" class="l-header-nav">
                     <ul>
@@ -36,7 +37,7 @@
                 </nav>
             </div>
         </header>
-        <main id="mainNavOpen" class="l-main">
+        <main class="l-main">
             <div class="blog">
                 <div class="blog-wrap">
                     <div class="blog-heading-wrap">
@@ -50,28 +51,34 @@
                         <div class="blog-categories">
                             <div class="l-wrap blog-categories-wrap">
                                 <div class="row">
-                                    <div class="col-12 col-md-4 col-lg-4">
+                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                                         <div class="blog-cat-item social">
-                                            <div class="blog-cat-item-wrap">
-                                                <h2><a href="#">Social life</a></h2>
-                                                <p>Enjoy you social life together</p>
-                                            </div>
+                                            <a href="#">
+                                                <div class="blog-cat-item-wrap">
+                                                    <h2>Social life</h2>
+                                                    <p>Enjoy you social life together</p>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-4 col-lg-4">
+                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                                         <div class="blog-cat-item politics">
-                                            <div class="blog-cat-item-wrap">
-                                                <h2><a href="#">Politics</a></h2>
-                                                <p>Be a part of politics</p>
-                                            </div>
+                                            <a href="#">
+                                                <div class="blog-cat-item-wrap">
+                                                    <h2>Politics</h2>
+                                                    <p>Be a part of politics</p>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-4 col-lg-4">
+                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                                         <div class="blog-cat-item food">
-                                            <div class="blog-cat-item-wrap">
-                                                <h2><a href="#">Food</a></h2>
-                                                <p>Let the food be finished</p>
-                                            </div>
+                                            <a href="#">
+                                                <div class="blog-cat-item-wrap">
+                                                    <h2>Food</h2>
+                                                    <p>Let the food be finished</p>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -79,32 +86,32 @@
                         </div>
                         <div class="l-wrap blog-page-container">
                             <div class="row">
-                                <div class="col-12 col-md-8 col-lg-8">
+                                <div class="col-12 col-sm-12 col-md-8 col-lg-8">
                                     <section class="blog-articles-list">
                                         <h2>Blog articles list</h2>
                                         <div class="l-wrap blog-articles-list-wrap">
                                             <article class="blog-article">
                                                 <div class="row">
-                                                    <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                                                         <div class="blog-article-infos">
                                                             <p class="blog-article-categories">Food, technology, Politics, Lifestyle</p>
                                                             <div class="row">
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-author icon">Mark wiens</p>
                                                                 </div>
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-date icon"><time datetime="2017-12-12">12 Dec, 2017</time></p>
                                                                 </div>
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-views icon">1.2M Views</p>
                                                                 </div>
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-comments icon">06 Comments</p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 col-md-9 col-lg-9">
+                                                    <div class="col-12 col-sm-12 col-md-9 col-lg-9">
                                                         <img 
                                                             src="img/blog/blonde-riding-a-horse.jpg"
                                                             srcset="img/blog/blonde-riding-a-horse-small.jpg 338w, 
@@ -115,34 +122,34 @@
                                                             alt="Blonde riding a horse in the mountains"
                                                             title="Astronomy Binoculars A Great Alternative" 
                                                         />
-                                                        <h3>Astronomy Binoculars A Great Alternative</h3>
+                                                        <h3><a href="article.html">Astronomy Binoculars A Great Alternative</a></h3>
                                                         <p class="blog-article-summary">MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
-                                                        <a href="article.html" class="read-article btn-secondary">Read the article</a>
+                                                        <a aria-label="Read Astronomy Binoculars A Great Alternative" href="article.html" class="read-article btn-secondary">Read the article</a>
                                                     </div>
                                                 </div>
                                             </article>
                                             <article class="blog-article">
                                                 <div class="row">
-                                                    <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                                                         <div class="blog-article-infos">
                                                             <p class="blog-article-categories">Food, technology, Politics, Lifestyle</p>
                                                             <div class="row">
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-author icon">Mark wiens</p>
                                                                 </div>
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-date icon"><time datetime="2017-12-12">12 Dec, 2017</time></p>
                                                                 </div>
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-views icon">1.2M Views</p>
                                                                 </div>
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-comments icon">06 Comments</p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 col-md-9 col-lg-9">
+                                                    <div class="col-12 col-sm-12 col-md-9 col-lg-9">
                                                         <img 
                                                             src="img/blog/forest-road.jpg" 
                                                             srcset="img/blog/forest-road-small.jpg 333w, 
@@ -153,34 +160,34 @@
                                                             alt="Route through the forest" 
                                                             title="The Basics Of Buying A Telescope" 
                                                         />
-                                                        <h3>The Basics Of Buying A Telescope</h3>
+                                                        <h3><a href="article.html">The Basics Of Buying A Telescope</a></h3>
                                                         <p class="blog-article-summary">MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
-                                                        <a href="article.html" class="read-article btn-secondary">Read the article</a>
+                                                        <a aria-label="Read The Basics Of Buying A Telescope" href="article.html" class="read-article btn-secondary">Read the article</a>
                                                     </div>
                                                 </div>
                                             </article>
                                             <article class="blog-article">
                                                 <div class="row">
-                                                    <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                                                         <div class="blog-article-infos">
                                                             <p class="blog-article-categories">Food, technology, Politics, Lifestyle</p>
                                                             <div class="row">
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-author icon">Mark wiens</p>
                                                                 </div>
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-date icon"><time datetime="2017-12-12">12 Dec, 2017</time></p>
                                                                 </div>
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-views icon">1.2M Views</p>
                                                                 </div>
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-comments icon">06 Comments</p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 col-md-9 col-lg-9">
+                                                    <div class="col-12 col-sm-12 col-md-9 col-lg-9">
                                                         <img 
                                                             src="img/blog/happy-wedding.jpg" 
                                                             srcset="img/blog/happy-wedding-small.jpg 333w, 
@@ -191,34 +198,34 @@
                                                             alt="Husband kidnapping his bride-to-be" 
                                                             title="The Glossary Of Telescopes" 
                                                         />
-                                                        <h3>The Glossary Of Telescopes</h3>
+                                                        <h3><a href="article.html">The Glossary Of Telescopes</a></h3>
                                                         <p class="blog-article-summary">MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
-                                                        <a href="article.html" class="read-article btn-secondary">Read the article</a>
+                                                        <a aria-label="Read The Glossary Of Telescopes" href="article.html" class="read-article btn-secondary">Read the article</a>
                                                     </div>
                                                 </div>
                                             </article>
                                             <article class="blog-article">
                                                 <div class="row">
-                                                    <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                                                         <div class="blog-article-infos">
                                                             <p class="blog-article-categories">Food, technology, Politics, Lifestyle</p>
                                                             <div class="row">
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-author icon">Mark wiens</p>
                                                                 </div>
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-date icon"><time datetime="2017-12-12">12 Dec, 2017</time></p>
                                                                 </div>
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-views icon">1.2M Views</p>
                                                                 </div>
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-comments icon">06 Comments</p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 col-md-9 col-lg-9">
+                                                    <div class="col-12 col-sm-12 col-md-9 col-lg-9">
                                                         <img 
                                                             src="img/blog/smiling-girl.jpg" 
                                                             srcset="img/blog/smiling-girl-small.jpg 333w, 
@@ -229,34 +236,34 @@
                                                             alt="A smiling girl" 
                                                             title="The Night Sky" 
                                                         />
-                                                        <h3>The Night Sky</h3>
+                                                        <h3><a href="article.html">The Night Sky</a></h3>
                                                         <p class="blog-article-summary">MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
-                                                        <a href="article.html" class="read-article btn-secondary">Read the article</a>
+                                                        <a aria-label="Read The Night Sky" href="article.html" class="read-article btn-secondary">Read the article</a>
                                                     </div>
                                                 </div>
                                             </article>
                                             <article class="blog-article">
                                                 <div class="row">
-                                                    <div class="col-12 col-md-3 col-lg-3">
+                                                    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                                                         <div class="blog-article-infos">
                                                             <p class="blog-article-categories">Food, technology, Politics, Lifestyle</p>
                                                             <div class="row">
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-author icon">Mark wiens</p>
                                                                 </div>
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-date icon"><time datetime="2017-12-12">12 Dec, 2017</time></p>
                                                                 </div>
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-views icon">1.2M Views</p>
                                                                 </div>
-                                                                <div class="col-6 col-md-12 col-lg-12">
+                                                                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
                                                                     <p class="blog-article-comments icon">06 Comments</p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 col-md-9 col-lg-9">
+                                                    <div class="col-12 col-sm-12 col-md-9 col-lg-9">
                                                         <img 
                                                             src="img/blog/bustling-port.jpg" 
                                                             srcset="img/blog/bustling-port-small.jpg 333w, 
@@ -267,34 +274,34 @@
                                                             alt="A bustling port" 
                                                             title="Telescopes 101" 
                                                         />
-                                                        <h3>Telescopes 101</h3>
+                                                        <h3><a href="article.html">Telescopes 101</a></h3>
                                                         <p class="blog-article-summary">MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
-                                                        <a href="article.html" class="read-article btn-secondary">Read the article</a>
+                                                        <a aria-label="Read Telescopes 101" href="article.html" class="read-article btn-secondary">Read the article</a>
                                                     </div>
                                                 </div>
                                             </article>
                                             <nav class="blog-page-changer">
                                                 <ul>
-                                                    <li class="previous"><a href="#"><i class="fas fa-caret-left"></i></a></li>
-                                                    <li><a href="#">01</a></li>
-                                                    <li><a class="is-active" href="#">02</a></li>
-                                                    <li><a href="#">03</a></li>
-                                                    <li><a href="#">04</a></li>
-                                                    <li><a href="#">05</a></li>
-                                                    <li class="next"><a href="#"><i class="fas fa-caret-right"></i></a></li>
+                                                    <li class="previous"><a aria-label="Previous articles page" href="#"><i class="fas fa-caret-left"></i></a></li>
+                                                    <li><a aria-label="Article page numnber 1" href="#">01</a></li>
+                                                    <li><a aria-label="Article page numnber 2" class="is-active" href="#">02</a></li>
+                                                    <li><a aria-label="Article page numnber 3" href="#">03</a></li>
+                                                    <li><a aria-label="Article page numnber 4" href="#">04</a></li>
+                                                    <li><a aria-label="Article page numnber 5" href="#">05</a></li>
+                                                    <li class="next"><a aria-label="Next articles page" href="#"><i class="fas fa-caret-right"></i></a></li>
                                                 </ul>
                                             </nav>
                                         </div>
                                     </section>
                                 </div>
-                                <div class="col-12 col-md-4 col-lg-4">
+                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                                     <aside class="m-aside-blog">
                                         <div class="l-wrap m-aside-blog-wrap">
                                             <div class="m-aside-blog-search">
                                                 <form class="search-box" action="traitement.php" method="POST">
                                                     <label for="search">Search :</label>
                                                     <input type="text" name="search" id="search" placeholder="Search posts">
-                                                    <input class="fas fa-search icon" type="submit" value="&#xf002;">
+                                                    <button aria-label="Search posts"><i class="fa fa-search"></i></button>
                                                 </form>
                                             </div>
                                             <section class="m-aside-blog-author">
@@ -309,51 +316,43 @@
                                                 <h4 class="author-name"><a href="#">Charlie Barber</a></h4>
                                                 <p class="author-role">Senior blog writer</p>
                                                 <div class="author-social">
-                                                    <a href="#">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </a>
-                                                    <a href="#">
-                                                        <i class="fab fa-twitter"></i>
-                                                    </a>
-                                                    <a href="#">
-                                                        <i class="fab fa-dribbble"></i>
-                                                    </a>
-                                                    <a href="#">
-                                                        <i class="fab fa-behance"></i>
-                                                    </a>
+                                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                                                    <a href="#"><i class="fab fa-behance"></i></a>
                                                 </div>
                                                 <p class="author-description">Boot camps have its supporters andit sdetractors. Some people do not understand why you should have to spend money on boot camp when you can get. Boot camps have itssuppor ters andits detractors.</p>
                                             </section>
                                             <section class="m-aside-blog-popular">
                                                 <h3 class="aside-heading">Popular Posts</h3>
-                                                <div class="popular-post">
+                                                <article class="popular-post">
                                                     <img src="img/blog/space-the-final-frontier.jpg" alt="Coloured sports gear" title="Space the final frontier" />
                                                     <div class="popular-post-title">
                                                         <h4><a href="#">Space the final frontier</a></h4>
                                                         <p>02 Hours ago</p>
                                                     </div>
-                                                </div>
-                                                <div class="popular-post">
+                                                </article>
+                                                <article class="popular-post">
                                                     <img src="img/blog/the-amazin-hubble.jpg" alt="Camera puking paint" title="The amazing hubble" />
                                                     <div class="popular-post-title">
                                                         <h4><a href="#">The amazing hubble</a></h4>
                                                         <p>05 Hours ago</p>
                                                     </div>
-                                                </div>
-                                                <div class="popular-post">
+                                                </article>
+                                                <article class="popular-post">
                                                     <img src="img/blog/astronomy-or-astrology.jpg" alt="Four lollipops" title="Astronomy or astrology" />
                                                     <div class="popular-post-title">
                                                         <h4><a href="#">Astronomy or astrology</a></h4>
                                                         <p>12 Hours ago</p>
                                                     </div>
-                                                </div>
-                                                <div class="popular-post">
+                                                </article>
+                                                <article class="popular-post">
                                                     <img src="img/blog/asteroid-telescope.jpg" alt="Work stuffs" title="Asteroids telescope" />
                                                     <div class="popular-post-title">
                                                         <h4><a href="#">Asteroids telescope</a></h4>
                                                         <p>18 Hours ago</p>
                                                     </div>
-                                                </div>
+                                                </article>
                                             </section>
                                             <section class="m-aside-blog-ads">
                                                 <h4>Your ad here !</h4>
@@ -409,7 +408,7 @@
                                                 <p>Here, I focus on a range of items and features that we use in life without giving them a second thought.</p>
                                                 <form class="aside-newsletter-form" action="traitement-newsletter.php" method="post">
                                                     <label for="aside-mail">Mail</label>
-                                                    <input class="far fa-envelope icon" type="email" name="aside-mail" id="aside-mail" placeholder="&#xf0e0; Enter  Email Adress">
+                                                    <input class="far fa-envelope icon" type="email" name="aside-mail" id="aside-mail" placeholder="&#xf0e0; Enter Email Adress">
                                                     <input type="submit" value="Subscribe">
                                                 </form>
                                                 <p>You can unsubscribe at any time </p>
@@ -437,50 +436,42 @@
                 </div>
             </div>
         </main>
-        <footer id="footerNavOpen" class="l-footer">
+        <footer class="l-footer">
             <div class="l-wrap l-footer-wrap">
                 <div class="row">
-                    <div class="col-12 col-md-4 col-lg-4">
-                        <div class="l-footer-about">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <section class="l-footer-about">
                             <h3>About me</h3>
                             <p> We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.</p>
                             <p>Copyright © 2020 All rights reserved | This template is made with <i class="far fa-heart"></i> by <a href="http://www.colorlib.com"> Colorlib</a></p>
-                        </div>
+                        </section>
                     </div>
-                    <div class="col-12 col-md-5 col-lg-5">
-                        <div class="l-footer-newsletter">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                        <section class="l-footer-newsletter">
                             <h3>Newsletter</h3>
                             <p>Stay updated with our latest trends</p>
                             <form class="newsletter-form" action="traitement-newsletter.php" method="post">
                                 <label for="mail">Mail</label>
-                                <input type="email" name="mail" id="mail" placeholder="Enter Email Adress">
-                                <input type="submit" value="&rightarrow;">
+                                <input type="email" name="mail" id="mail" placeholder="Enter Email Address">
+                                <input aria-label="Subscribe to the newsletter" type="submit" value="&rightarrow;">
                             </form>
-                        </div>
+                        </section>
                     </div>
-                    <div class="col-12 col-md-3 col-lg-3">
-                        <div class="l-footer-social">
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                        <section class="l-footer-social">
                             <h3>Follow Me</h3>
                             <p>Let us be social</p>
                             <div class="l-footer-social-logos">
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-dribbble"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-behance"></i>
-                                </a>
+                                <a aria-label="Facebook page of ISL Web" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a aria-label="Twitter page of ISL Web" href="#"><i class="fab fa-twitter"></i> </a>
+                                <a aria-label="Dribbble page of ISL Web" href="#"><i class="fab fa-dribbble"></i></a>
+                                <a aria-label="Behance page of ISL Web" href="#"><i class="fab fa-behance"></i></a>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>
         </footer>
-        <script src="js/menu.js"></script>
+        <script src="js/menu.min.js"></script>
     </body>
 </html>

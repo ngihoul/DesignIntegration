@@ -1,4 +1,4 @@
-/* Page heading */
+// Page Heading
 .m-page-heading {
     @include bg-gradient;
     color: #fff;
@@ -13,15 +13,16 @@
 }
 
 .m-page-heading-wrap {
- padding-top: 8.5rem;
+    padding-top: 8.5rem;
 }
 
+// ** Breadcrumb in page Heading
 .next-row::after {
     content: '⇁';
     padding: 0 0.5rem;
 }
 
-/* Section & Aside heading */
+// Section & Aside Heading
 .m-section-heading, .m-aside-heading {
     text-align: center;
     padding-bottom: 1.5rem;
@@ -47,7 +48,7 @@
     }
 }
 
-/* About me -- Home.html & About.html */
+// About me in Home & About
 .m-about-wrap {
     padding-top: 8rem;
 
@@ -55,8 +56,24 @@
         align-items: center;
     }
 
+    h2 {
+        text-transform: uppercase;
+    }
+
     img {
         padding-bottom: 5rem;
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -sm)) {
+    .m-about-wrap {
+        .row {
+            align-items: center;
+        }
+
+        img {
+            padding: 0;
+        }
     }
 }
 
@@ -67,10 +84,6 @@
         .row {
             align-items: flex-end;
         }
-    
-        img {
-            padding: 0;
-        }
     }
 }
 
@@ -80,7 +93,91 @@
     }
 }
 
-/* Premium Quality -- Home.html & About.html */
+// Projects presentation in Home & Portfolio
+.m-projects-presentation {
+    padding-top: 1.5rem;
+    text-align: center;
+
+    h4 {
+        padding-top: 0.5rem;
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -sm)) {
+    .m-projects {
+        // Using the grid classes to use the :nth-child selector > Enhanced Maintainability.
+        .col-sm-6:nth-child(odd) {
+            padding-left: 0.5rem;
+        }
+
+        .col-sm-6:nth-child(even) {
+            padding-right: 0.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    // Using the grid classes to use the :nth-child selector > Enhanced Maintainability.
+    .m-projects {
+        .col-sm-6:nth-child(odd) {
+            padding-left: 0;
+        }
+
+        .col-sm-6:nth-child(even) {
+            padding-right: 0;
+        }
+
+        .col-md-4:nth-child(3n+2) {
+            padding-right: 1.5rem;
+        }
+    
+        .col-md-4:nth-child(3n+3) {
+            padding: 0 0.75rem;
+        }
+
+        .col-md-4:nth-child(3n+4) {
+            padding-left: 1.5rem;
+        }
+    }
+
+    .m-projects-presentation {
+        padding-top: 0;
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -lg)){
+    // Glasses and gradient background on project thumbnails.
+    .m-projects-presentation a:hover {
+        .m-projects-thumbnails {
+            position: relative;
+        }
+    
+        > .m-projects-thumbnails::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include bg-gradient;
+            opacity: 0.7;
+            width: 100%;
+            height: 100%;
+            border-radius : 8px;
+            z-index: 1;
+        }
+    
+        > .m-projects-thumbnails::after {
+            content: url('../img/preview.png');
+            display: block;
+            position: absolute;
+            top: calc(50% - 20px);
+            left: calc(50% - 29px);
+            z-index: 2;
+        }
+    }
+}
+
+// Premium Quality in Home & About
 .m-quality {
     @include bg-gradient;
 }
@@ -104,7 +201,7 @@
     }
 }
 
-@media screen and (min-width: map-get($responsive-table, -md)) {
+@media screen and (min-width: map-get($responsive-table, -sm)) {
     .m-quality-wrap {
         display: flex;
         justify-content: space-around;
@@ -112,113 +209,54 @@
 
         img {
             width: 100%;
+        }
+
+        a:last-child {
+            display: block;
+        }
+    }     
+}
+
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .m-quality-wrap {
+        img {
             padding: 1.5rem;
         }
 
         a {
-            display: inline-block;
-
-            &:first-child {
-                display: inline-block;
-            }
+            display: block;
         }
     }
 }
 
-@media screen and (min-width: map-get($responsive-table, -md)) {
+@media screen and (min-width: map-get($responsive-table, -lg)) {
     .m-quality-wrap {
         padding: 5rem 0;
     }
 }
 
-/* Projects thumbnails */
-.m-projects-presentation {
-    padding-top: 1.5rem;
-    text-align: center;
-
-    h4 {
-        padding-top: 0.5rem;
-    }
-}
-
-.m-projects-presentation a:hover {
-    .m-projects-thumbnails {
-        position: relative;
-    }
-
-    > .m-projects-thumbnails::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        @include bg-gradient;
-        opacity: 0.7;
-        width: 100%;
-        height: 100%;
-        border-radius : 8px;
-        z-index: 1;
-    }
-
-    > .m-projects-thumbnails::after {
-        content: url('../img/preview.png');
-        display: block;
-        position: absolute;
-        top: calc(50% - 20px);
-        left: calc(50% - 29px);
-        z-index: 2;
-    }
-}
-
-@media screen and (min-width: map-get($responsive-table, -md)) {
-    .m-projects {
-        // Utilisation des class de la grille pour éviter d'utiliser les class "webdesign", "webdev", etc. > Maintenabilité accrue.
-        .col-md-6:nth-child(even) {
-            padding-right: 1.5rem;
-        }
-
-        .col-md-6:nth-child(odd) {
-            padding-left: 1.5rem;
-        }
-    }
-
-    .m-projects-presentation {
-        padding-top: 0;
-    }
-}
-
-@media screen and (min-width: map-get($responsive-table, -lg)) {
-    .m-projects {
-        .col-md-6:nth-child(even) {
-            padding-right: 0;
-        }
-
-        .col-md-6:nth-child(odd) {
-            padding-left: 0;
-        }
-
-        .col-md-6:nth-child(3n+2) {
-            padding-right: 1.5rem;
-        }
-    
-        .col-md-6:nth-child(3n+3) {
-            padding: 0 0.75rem;
-        }
-
-        .col-md-6:nth-child(3n+4) {
-            padding-left: 1.5rem;
-        }
-    }
-}
-
-/* Aside -- Blog.html & Article.html */
-/* Blog aside */
+// Aside in Blog & Article
+// ** Layout
 .m-aside-blog-wrap {
     padding: 3rem 1rem;
     border: 2px solid #f1f0ee;
 }
 
-/* Aside -- Author */
+@media screen and (min-width: map-get($responsive-table, -md)) {
+    .m-aside-blog-wrap {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .m-aside-blog-wrap {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+// ** Author
 .m-aside-blog section {
     border-top: 2px solid #f1f0ee;
     padding: 3rem 0;
@@ -252,12 +290,18 @@
     }
 }
 
-/* Aside - Ads */
+@media screen and (min-width: map-get($responsive-table, -lg)) {
+    .author-social a:hover {
+        color: $color-primary;
+    }
+}
+
+// ** Ads
 .m-aside-blog-ads h4 {
     display: none;
 }
 
-/* Aside -- Post categories */
+// ** Post categories
 .m-aside-blog-categories .aside-heading {
     margin-bottom: 0.5rem;
 }
@@ -280,11 +324,11 @@
     }
 }
 
-/* Aside -- Newsletter */
+// ** Newsletter
 .m-aside-blog-newsletter {
     text-align: center;
 
-    p:last-child{
+    p:last-child {
         padding-bottom: 0;
     }
 }
@@ -298,6 +342,7 @@
 
     input {
         padding: 0.8rem;
+
         &[type=email]{
             @include custom-grid(8);
 
@@ -311,31 +356,17 @@
             background-color: $color-primary;
             border-color: $color-primary;
             color: #fff;
-            cursor: pointer;
-
-            &:hover {
-                background-color: $color-secondary;
-                border-color: $color-secondary;
-            }
         }
     }
 }
 
-@media screen and (min-width: map-get($responsive-table, -md)) {
-    .m-aside-blog-wrap {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-}
-
 @media screen and (min-width: map-get($responsive-table, -lg)) {
-    .m-aside-blog-wrap {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-}
+    .aside-newsletter-form input[type=submit] {
+        cursor: pointer;
 
-// Hack placeholder font in Aside-newsletter
-.fa, .far, .fas {
-    font-family: "Font Awesome 5 Free", "Poppins";
+        &:hover {
+            background-color: $color-secondary;
+            border-color: $color-secondary;
+        }
+    }
 }

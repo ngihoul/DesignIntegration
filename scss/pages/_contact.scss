@@ -1,20 +1,21 @@
+// Contact
 .contact-wrap {
     padding: 0;
     background-color: $color-bg-secondary;
 }
 
+// ** Google maps
 .l-wrap.contact-googlemap-wrap {
     padding-bottom: 0;
 }
 
-.contact-googlemap {
-    iframe {
-        width: 100%;
-        min-height: 450px;
-        border: none;
-    }
+.contact-googlemap iframe {
+    width: 100%;
+    min-height: 450px;
+    border: none;
 }
 
+// ** Contact details
 .contact-details-item {
     display: flex;
     align-items: center;
@@ -40,6 +41,7 @@
     }
 }
 
+// ** Contact form
 .contact-form {
     padding: 5rem 0 0;
 
@@ -51,7 +53,17 @@
 .contact-form-field {
     display: flex;
     justify-content: flex-end;
+}
 
+@media screen and (min-width: map-get($responsive-table, -sm)) {
+    .contact-form {
+        padding-top: 0;
+
+        input, textarea {
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+        }
+    }
 }
 
 @media screen and (min-width: map-get($responsive-table, -md)) {

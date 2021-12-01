@@ -1,10 +1,5 @@
-/* Generic tags */
 @charset 'UTF-8';
-@font-face {
-    font-family: "Poppins";
-    src: url("../fonts/poppins/Poppins-Regular.ttf") format("truetype");
-}
-
+// GENERIC TAGS
 * {
     box-sizing: border-box;
 }
@@ -72,16 +67,13 @@ form {
         font: inherit;
         color: lighten($color-txt, 10%);
     }
-}
 
-@media screen and (min-width: map-get($responsive-table, -md)) {
-    p, q {
-        font-size: 0.9rem;
+    input:focus, button:focus, textarea:focus {
+        font-weight: bold;
     }
 }
 
-@media screen and (min-width: map-get($responsive-table, -lg)) {
-    p, q {
-        font-size: 1rem;
-    }
+// Hack placeholder font in Aside-newsletter
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free", "Poppins";
 }

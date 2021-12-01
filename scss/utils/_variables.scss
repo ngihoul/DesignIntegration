@@ -1,7 +1,7 @@
 // Colors
 $color-primary: #8490ff;
 $color-secondary: #62bdfc;
-$color-txt: #777777;
+$color-txt: darken(#777777, 5%);
 $color-title: #222222;
 $color-link: #8490ff;
 $color-bg-header: #fff;
@@ -17,12 +17,13 @@ $color-footer-title: #fcfcff;
 $grid-columns: 12;
 
 $responsive-table: (
-    -xs: 360px, 
+    -xs: 360px,
+    -sm: 568px,
     -md: 860px,
     -lg: 1140px
 );
 
-// About.html -- Les compétences
+// Skills
 $tools-table: (
     after-effects: 85%,
     photoshop: 90%,
@@ -31,14 +32,10 @@ $tools-table: (
     sketch: 85%
 );
 
-/* Blog icons */
+// Blog icons
 $blog-icons: (
     author: "\f007",
     date: "\f073",
     views: "\f06e",
     comments: "\f075"
-);
-
-$page-heading-row: (
-    row: "\f061"
 );

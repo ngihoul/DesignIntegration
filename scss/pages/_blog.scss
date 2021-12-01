@@ -1,16 +1,17 @@
-/* Blog Heading */
+// Blog
 .blog {
     background: $color-bg-secondary;
 }
 
+// ** Blog Heading
 .blog-heading {
     position: relative;
     background: url('../img/blog/blog-home-banner-m.jpg') center top no-repeat;
-    background-size: cover; // Je n'arrive pas à l'inclure dans background ???
+    background-size: cover; // I can't get it into the background????
     text-align: center;
     height: 100vh;
     z-index: 0;
-    // centrer le texte horizontalement et verticalement
+    // Centre the text horizontally and vertically
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,17 +47,28 @@
 @media screen and (min-width: map-get($responsive-table, -md)) {
     .blog-heading {
         height: auto;
-        padding: 8rem 0 5rem;background: url('../img/blog/blog-home-banner-l.jpg') center top no-repeat;
+        padding: 8rem 0 5rem;
+        background: url('../img/blog/blog-home-banner-l.jpg') center top no-repeat;
     }
 }
 
 @media screen and (min-width: map-get($responsive-table, -lg)) {
     .blog-heading {
-        padding: 8rem 0 5rem;background: url('../img/blog/blog-home-banner.jpg') center top no-repeat;
+        background: url('../img/blog/blog-home-banner.jpg') center top no-repeat;
     }
 }
 
-/* Blog categories */
+// ** Page container excl. aside
+.blog-page-container {
+    padding-top: 0;
+}
+
+// ** Categories
+.blog-cat-item-wrap {
+    width: 100%;
+    z-index: 1;
+}
+
 .blog-cat-item {
     position: relative;
     height: 12rem;
@@ -73,7 +85,7 @@
         opacity: 0.75;
         width: 90%;
         height: 80%;
-        }
+    }
 
     h2 {
         position: relative;
@@ -92,7 +104,15 @@
 
     p {
         color: $color-aside-subtitle;
+        position: relative;
+        z-index: 2;
     }
+
+    a {
+        display: block;
+        width: 100%;
+    }
+
 
     &.social {
         background: url('../img/blog/cat-widget1.jpg') no-repeat;
@@ -109,11 +129,6 @@
         background-size: cover;
         margin-bottom: 0;
     }
-}
-
-.blog-cat-item-wrap {
-    width: 100%;
-    z-index: 1;
 }
 
 @media screen and (min-width: map-get($responsive-table, -md)) {
@@ -144,20 +159,14 @@
     }
 }
 
-.blog-page-container {
-    padding-top: 0;
-}
-
 @media screen and (min-width: map-get($responsive-table, -md)) {
     .blog-page-container {
         padding-top: 5rem;
     }
 }
 
-
-/* Blog articles list */
+// ** Articles list
 .blog-articles-list-wrap {
-    //margin-top: 5rem;
     padding: 0 0 5rem;
 }
 
@@ -165,7 +174,7 @@
     display: none;
 }
 
-/* Blog article thumbnails */
+// ** Article thumbnails
 .blog-article {
     padding-bottom: 5rem;
     
@@ -182,7 +191,7 @@
     color: darken($color-txt,20%);
 }
 
-/* Icons */
+// ** Custom icons
 @each $item, $font-awesome-ref in $blog-icons {
     .blog-article-#{$item}::after {
         @include custom-icon(quote(#{$font-awesome-ref}));
@@ -192,6 +201,10 @@
 @media screen and (min-width: map-get($responsive-table, -md)) {
     .blog-articles-list-wrap {
         padding: 0 1.5rem 5rem 0;
+    }
+
+    .blog-article-categories {
+        padding-top: 0.7rem;
     }
 
     .blog-article-infos {
@@ -215,5 +228,14 @@
 @media screen and (min-width: map-get($responsive-table, -lg)) {
     .blog-articles-list-wrap {
         padding-right: 2rem;
+    }
+
+    .blog-article h3 a {
+        transition: color 1s;
+
+        &:hover {
+            color: $color-primary;
+            transition: color 1s;
+        }
     }
 }

@@ -1,5 +1,5 @@
 
-/* FlexBox Grid */
+// Flexbox grid
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -15,8 +15,7 @@
                 @include custom-grid($i);
             }
         } 
-    }
-    @else {
+    } @else {
         @media screen and (min-width: $responsive-sizes) {
             .col#{$responsive-names} {
                 @include col-alone;

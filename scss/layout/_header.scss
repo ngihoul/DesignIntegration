@@ -1,3 +1,4 @@
+// Header
 .l-header {
     background: $color-bg-primary;
     position: fixed;
@@ -26,17 +27,16 @@
     }
 }
 
-/* Animated hamburger menu */
+// ** Animated Hamburger Menu
 .l-header-hamburger {
     @include custom-grid(6);
     position: relative;
-    height: 3rem; // Navigateurs n'affichent pas la div en block si pas de hauteur > Zone de click très restreinte sans.
-    cursor: pointer; // Pas nécessaire pour le mobile.
+    height: 3rem; // Browsers do not display the block div if no height > Very restricted click area without.
     z-index: 9999;
 
     .burger {
         position: absolute;
-        top: calc(50% - 1.5px); // 50% - la moitié de la taille de l'élement (cf. height).
+        top: calc(50% - 1.5px); //50% - la moitié de la taille de l'élement (cf. height).
         right: 2.2rem;
         width: 24px;
         height: 3px;
@@ -62,33 +62,33 @@
         }
     }
 
-    /* From hamburger menu to closure cross */
+// ** ** From hamburger menu to closure cross
     &.nav-active > .burger {
-            background-color: transparent;
-            transition: background-color 0.5s;
+        background-color: transparent;
+        transition: background-color 0.5s;
     }
 
     &.nav-active > .burger::before {
-            transform: rotate(45deg);
-            top: 0;
-            transition: all 0.5s;
+        transform: rotate(45deg);
+        top: 0;
+        transition: all 0.5s;
     }
 
     &.nav-active > .burger::after {
-            transform: rotate(-45deg);
-            bottom: 0;
-            transition: all 0.5s;
+        transform: rotate(-45deg);
+        bottom: 0;
+        transition: all 0.5s;
     }
 }
 
-/* Hidden nav */
+// ** Hidden Nav
 .l-header-nav {
     position: fixed;
     top: 0;
     left: -100%;
     width: 75vw;
     height: 100vh;
-    background: rgba(#000, 0.94);
+    background: rgba(#000, 0.90);
     transition: left 0.5s;
 
     ul {
@@ -108,7 +108,7 @@
         color: $color-link;
     }
 
-    /* Active nav */
+// ** ** Active Nav
     &.is-active {
         left: 0;
         transition: left 0.5s;
@@ -124,24 +124,19 @@
             background: black;
             opacity: 0.45;
             z-index: -9999;
-
-            animation: opacityOnBody 1s;
+            animation: greyOnBody 0.5s;
         }
     }
 }
 
-/* grey body animation */
-@keyframes opacityOnBody {
+// ** Grey Body Animation
+@keyframes greyOnBody {
     0% {
-        opacity: 0;
-    }
-
-    25% {
-        opacity: 0;
+        left: -200%;
     }
 
     100% {
-        opacity: 0.45;
+        left: 0;
     }
 }
 
@@ -188,6 +183,10 @@
 
     .l-header-logo a {
         padding-left: 0;
+    }
+
+    .l-header-hamburger {
+        cursor: pointer;
     }
 
     .l-header-nav ul {
